@@ -69,4 +69,4 @@ yarn-error.log
 .yarn-integrity
 
 #design files
-design
+src/design
