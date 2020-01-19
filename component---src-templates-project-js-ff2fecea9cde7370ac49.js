@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{GhMY:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a),c=n("CGcg"),i=n("4Tjr");t.default=function(e){var t=e.pageContext.title;return r.a.createElement(c.a,null,r.a.createElement(i.a,{title:t}),r.a.createElement("div",null,"this is ",t," project"))}}}]);
+//# sourceMappingURL=component---src-templates-project-js-ff2fecea9cde7370ac49.js.map
