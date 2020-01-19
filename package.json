@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
