@@ -10,6 +10,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  * {
+    font-family: "Vazir", sans-serif;
+  }
+  direction: rtl;
 }
 article,
 aside,
@@ -45,6 +49,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
