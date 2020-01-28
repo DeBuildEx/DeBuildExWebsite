@@ -53,6 +53,7 @@
       flex-direction: row-reverse;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
       * {
         height: 100%;
         outline: none;
@@ -63,7 +64,7 @@
         cursor: pointer;
       }
       input {
-        transition: width 0.4s ease-in-out;
+        transition: transform 0.4s ease-in-out;
         padding: 0;
         border-radius: $normalBorderRadius;
         color: $purple;
@@ -102,11 +103,10 @@
 }
 
 .hidden {
-  width: 0;
-  padding: 0 !important;
+  transform: scale(0);
 }
 .visible {
-  width: 250px;
+  transform: scale(1);
 }
 @keyframes openUp {
   from {
