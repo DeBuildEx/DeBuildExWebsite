@@ -1,0 +1,118 @@
+@import "src/assets/styles/libs/vars";
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 5rem $containerPadding;
+
+  * {
+    color: white;
+    font-size: 0.9em;
+    user-select: none;
+  }
+  i {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    display: inline-block;
+  }
+  .logo {
+    a {
+      text-decoration: none;
+      background: url("src/images/DBEX-logo(transparent_background--white).png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 140px;
+      height: 60px;
+    }
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    a {
+      margin-left: 0.5em;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      padding: 0.3em 1em;
+      position: relative;
+
+      i {
+        margin-left: 0.2em;
+      }
+    }
+    .searchBox {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      * {
+        height: 100%;
+        outline: none;
+        border: 0;
+      }
+      button {
+        background: none;
+        cursor: pointer;
+      }
+      input {
+        transition: width 0.4s ease-in-out;
+        padding: 0;
+        border-radius: $normalBorderRadius;
+        color: $purple;
+        padding: 0.4em 1.2em;
+      }
+    }
+    a:not(.activeLink) {
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          left: auto;
+          right: auto;
+          bottom: 0;
+          height: 3px;
+          width: 50px;
+          background-color: $white;
+          animation: openUp 0.2s ease-in-out 1;
+        }
+      }
+    }
+  }
+  .activeLink {
+    transition: background 0.4s linear;
+    background: $white;
+    color: $purple;
+    -webkit-box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    * {
+      color: $purple;
+    }
+    border-radius: 20px;
+  }
+}
+
+.hidden {
+  width: 0;
+  padding: 0 !important;
+}
+.visible {
+  width: 250px;
+}
+@keyframes openUp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50px;
+  }
+}
