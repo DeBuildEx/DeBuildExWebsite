@@ -1,15 +1,17 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState, useCallback } from "react"
+import React, { useState, useCallback, useContext } from "react"
 import Media from "react-media"
 import styles from "./NavBar.module.scss"
+import { AppContext } from "src/Utils/AppContext/AppContext.js"
 
 const NavBar = ({ siteTitle }) => {
   const [isSearchBarVisible, setIsSearchBarVisible] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  /* get the location from the context store */
   const {
     location: { hash },
-  } = window
+  } = useContext(AppContext)
   //toggle the visibility of the search bar
   const toggleSearchBar = useCallback(() => {
     setIsSearchBarVisible(isSearchBarVisible => !isSearchBarVisible)
@@ -37,10 +39,12 @@ const NavBar = ({ siteTitle }) => {
           {isMenuOpen ? (
             <i
               onClick={toggleNavBar}
+              role="button"
               className={`icon ion-md-close ${styles["navBar__toggleButton"]}`}
             ></i>
           ) : (
             <i
+              role="button"
               onClick={toggleNavBar}
               className={`icon ion-md-funnel ${styles["navBar__toggleButton"]}`}
             ></i>
@@ -68,7 +72,7 @@ const NavBar = ({ siteTitle }) => {
        
        `}
             >
-              <a href="#" className={hash === "" ? styles.activeLink : ""}>
+              <a href="/#" className={hash === "" ? styles.activeLink : ""}>
                 صفحه اصلی
               </a>
               <a
