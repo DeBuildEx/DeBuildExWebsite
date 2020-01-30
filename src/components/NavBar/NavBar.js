@@ -82,39 +82,39 @@ const NavBar = ({ siteTitle }) => {
        
        `}
             >
-              <a href="/#" className={hash === "" ? styles.activeLink : ""}>
+              <Link to="/#" className={hash === "" ? styles.activeLink : ""}>
                 صفحه اصلی
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                to="#services"
                 className={hash === "#services" ? styles.activeLink : ""}
               >
                 خدمات
-              </a>
-              <a
-                href="#projects"
+              </Link>
+              <Link
+                to="#projects"
                 className={hash === "#projects" ? styles.activeLink : ""}
               >
                 پروژه ها
-              </a>
-              <a
-                href="#team"
+              </Link>
+              <Link
+                to="#team"
                 className={hash === "#team" ? styles.activeLink : ""}
               >
                 اعضای تیم
-              </a>
-              <a
-                href="#contact-us"
+              </Link>
+              <Link
+                to="#contact-us"
                 className={hash === "#contact-us" ? styles.activeLink : ""}
               >
                 تماس با ما
-              </a>
-              <a
-                href="#order"
+              </Link>
+              <Link
+                to="#order"
                 className={hash === "#order" ? styles.activeLink : ""}
               >
                 مشاوره و سفارش پروژه<i className="icon ion-md-add-circle"></i>
-              </a>
+              </Link>
               <div className={styles.searchBox}>
                 <input
                   type="text"
