@@ -1,0 +1,20 @@
+@import "src/assets/styles/libs/vars";
+
+.quotesItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2.5em;
+  img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+  h2 {
+    color: $purple;
+  }
+  p {
+    color: $black;
+  }
+}

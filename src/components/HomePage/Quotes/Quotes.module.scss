@@ -1,0 +1,36 @@
+@import "src/assets/styles/libs/vars";
+
+.previousButton {
+  background-color: cyan;
+}
+.quotes {
+  width: 100%;
+  min-height: 250px;
+  margin-top: 14em;
+  //   overflow: hidden;
+  //   margin: 0 auto;
+  h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 5em;
+      color: $grey;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      @media screen and(hover:hover) {
+        &:hover {
+          //   transform: scale(1.15);
+          color: $black;
+        }
+      }
+    }
+  }
+  .quotesContainer {
+    min-width: 550px;
+  }
+}
