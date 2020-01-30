@@ -9,51 +9,42 @@ const NavBar = ({ siteTitle }) => {
   const toggleSearchBar = useCallback(() => {
     setIsSearchBarVisible(isSearchBarVisible => !isSearchBarVisible)
   }, [])
+  const {
+    location: { hash },
+  } = window
   return (
     <nav className={styles.navBar}>
       <div className={styles.logo}>
         <Link to="/"></Link>
       </div>
       <div className={styles.menu}>
-        <a
-          href="/#"
-          className={window.location.hash === "" ? styles.activeLink : ""}
-        >
+        <a href="/#" className={hash === "" ? styles.activeLink : ""}>
           صفحه اصلی
         </a>
         <a
           href="/#services"
-          className={
-            window.location.hash === "#services" ? styles.activeLink : ""
-          }
+          className={hash === "#services" ? styles.activeLink : ""}
         >
           خدمات
         </a>
         <a
           href="/#projects"
-          className={
-            window.location.hash === "#projects" ? styles.activeLink : ""
-          }
+          className={hash === "#projects" ? styles.activeLink : ""}
         >
           پروژه ها
         </a>
-        <a
-          href="/#team"
-          className={window.location.hash === "#team" ? styles.activeLink : ""}
-        >
+        <a href="/#team" className={hash === "#team" ? styles.activeLink : ""}>
           اعضای تیم
         </a>
         <a
           href="/#contact-us"
-          className={
-            window.location.hash === "#contact-us" ? styles.activeLink : ""
-          }
+          className={hash === "#contact-us" ? styles.activeLink : ""}
         >
           تماس با ما
         </a>
         <a
           href="/#order"
-          className={window.location.hash === "#order" ? styles.activeLink : ""}
+          className={hash === "#order" ? styles.activeLink : ""}
         >
           مشاوره و سفارش پروژه<i className="icon ion-md-add-circle"></i>
         </a>
