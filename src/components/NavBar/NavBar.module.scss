@@ -68,9 +68,6 @@
     .searchBox {
       display: flex;
       max-height: 33px;
-      @media screen and (min-width: $largeDesktopBreakpoint+(1)) {
-        display: none !important;
-      }
     }
     .itemContainer {
       display: flex;

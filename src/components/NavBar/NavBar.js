@@ -26,16 +26,26 @@ const NavBar = ({ siteTitle }) => {
       <div className={styles.logo}>
         <Link to="/"></Link>
         <div className={styles.itemContainer}>
-          <div className={styles.searchBox}>
-            <input
-              type="text"
-              placeholder="جستجو ..."
-              className={isSearchBarVisible ? styles.visible : styles.hidden}
-            />
-            <button onClick={toggleSearchBar}>
-              <i className="icon ion-md-search"></i>
-            </button>
-          </div>
+          <Media queries={{ large: "(max-width:1280px)" }}>
+            {matches =>
+              matches.large ? (
+                <div className={styles.searchBox}>
+                  <input
+                    type="text"
+                    placeholder="جستجو ..."
+                    className={
+                      isSearchBarVisible ? styles.visible : styles.hidden
+                    }
+                  />
+                  <button onClick={toggleSearchBar}>
+                    <i className="icon ion-md-search"></i>
+                  </button>
+                </div>
+              ) : (
+                ""
+              )
+            }
+          </Media>
           {isMenuOpen ? (
             <i
               onClick={toggleNavBar}
