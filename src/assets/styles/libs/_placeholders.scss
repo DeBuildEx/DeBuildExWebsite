@@ -1,0 +1,8 @@
+@import "src/assets/styles/libs/vars";
+
+%normalPadding {
+  padding: 5rem $containerPadding;
+  @media screen and (max-width: 835px) {
+    padding: 3rem 1.5rem;
+  }
+}
