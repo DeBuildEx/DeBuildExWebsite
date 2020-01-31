@@ -1,9 +1,23 @@
-@import "src/assets/styles/base/fonts";
 @import "src/assets/styles/libs/vars";
+@import "src/assets/styles/libs/placeholders";
 
 .header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   background: $purple;
-  min-height: 530px;
+  min-height: 550px;
   border-bottom-left-radius: 3356% 1420px;
   border-bottom-right-radius: 3356% 1420px;
+  > * {
+    width: 100%;
+  }
+  h1 {
+    @extend %normalPadding;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    color: $white;
+    margin: 0;
+  }
 }
