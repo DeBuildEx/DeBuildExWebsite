@@ -52,7 +52,7 @@ const Quotes = () => {
       <div className={styles.container}>
         <i
           role="button"
-          className="icon ion-md-arrow-dropright"
+          className="icon ion-md-arrow-round-forward"
           onClick={moveRight}
         ></i>
         <div className={styles.quotesContainer}>
@@ -60,7 +60,7 @@ const Quotes = () => {
         </div>
         <i
           role="button"
-          className="icon ion-md-arrow-dropleft"
+          className="icon ion-md-arrow-round-back"
           onClick={moveLeft}
         ></i>
       </div>
