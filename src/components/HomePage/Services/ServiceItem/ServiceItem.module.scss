@@ -1,0 +1,37 @@
+@import "src/assets/styles/libs/vars";
+@import "src/assets/styles/libs/placeholders";
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $quotesBackground;
+  border-radius: $buttonBorderRadius;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: 1.75em;
+  margin: 0;
+  // max-width: 310px;
+  width: 100%;
+  user-select: none;
+  > * {
+    margin: 0;
+    color: $black;
+  }
+  img {
+    width: 85px;
+    height: auto;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    margin-right: 1.7em;
+    strong {
+      margin-bottom: 0.35em;
+    }
+  }
+}
