@@ -1,0 +1,16 @@
+@import "src/assets/styles/libs/vars";
+@import "src/assets/styles/libs/placeholders";
+
+.green {
+  background-color: $green;
+}
+.yellow {
+  background-color: $orange;
+}
+.blue {
+  background-color: $blue;
+}
+
+.statusBox {
+  color: white;
+}

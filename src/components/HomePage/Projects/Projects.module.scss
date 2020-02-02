@@ -1,0 +1,16 @@
+@import "src/assets/styles/libs/vars";
+@import "src/assets/styles/libs/placeholders";
+
+.projects {
+  background-color: $quotesBackground;
+  @extend %normalSectionPadding;
+  & > * {
+    width: 100%;
+  }
+  h1 {
+    font-size: $normalHeaderFontSize;
+    text-align: center;
+  }
+  .container {
+  }
+}
