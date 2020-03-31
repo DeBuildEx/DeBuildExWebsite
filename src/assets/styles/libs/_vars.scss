@@ -1,6 +1,9 @@
 //breakpoints
+$extraLargeDesktopBreakpoint: 1400px;
 $largeDesktopBreakpoint: 1280px;
+$extraLargeTabletBreakpoint: 950px;
 $largeTabletBreakpoint: 625px;
+$extraLargeMobileBreakpoint: 495px;
 $largeMobileBreakpoint: 430px;
 //colors
 $purple: #5b61ff;
@@ -8,6 +11,9 @@ $white: #fafafa;
 $black: #333333;
 $grey: #999999;
 $quotesBackground: #ffffff;
+$orange: #ffc130;
+$green: #3ac994;
+$blue: #67b8ff;
 
 // border radius
 $buttonBorderRadius: 5px;
@@ -18,3 +24,5 @@ $containerPadding: 6.5rem;
 
 //font sizes
 $normalHeaderFontSize: 1.4em;
+// transitionTimes
+$normalTransitionTime: 0.2s;
