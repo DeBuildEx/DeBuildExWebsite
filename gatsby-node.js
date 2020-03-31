@@ -8,7 +8,7 @@
 
 const path = require("path")
 const personsFile = require("./src/data/persons.json")
-const projectsFile = require("./src/data/projects.json")
+const projectsFile = require("./src/data/projectList.json")
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
