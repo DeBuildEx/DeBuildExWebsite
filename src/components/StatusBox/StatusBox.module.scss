@@ -12,5 +12,14 @@
 }
 
 .statusBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
+  border-radius: 50px;
+  padding: 0.25em 0.75em;
+  i {
+    margin-left: 1em;
+    font-size: 1.5em;
+  }
 }

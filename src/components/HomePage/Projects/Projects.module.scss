@@ -2,6 +2,10 @@
 @import "src/assets/styles/libs/placeholders";
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   background-color: $quotesBackground;
   @extend %normalSectionPadding;
   & > * {
@@ -12,5 +16,27 @@
     text-align: center;
   }
   .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5em 2.25em;
+    justify-content: center;
+    margin: 3.5em 0;
+    @media screen and(max-width:$extraLargeDesktopBreakpoint) {
+      grid-template-columns: auto auto;
+    }
+    @media screen and(max-width:$extraLargeTabletBreakpoint) {
+      grid-template-columns: auto;
+    }
+  }
+  .more {
+    @extend %buttonDefaultStyles;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $purple;
+    border-radius: 50px;
+    padding: 0.5em 3.25em;
+    color: white;
+    width: auto;
   }
 }

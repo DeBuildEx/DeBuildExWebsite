@@ -18,9 +18,8 @@ const stautsGenerator = status => {
 const StatusBox = ({ status }) => {
   return (
     <div className={`${styles[statusCodes[status].color]} ${styles.statusBox}`}>
-      <i className={`icon ion-md-${stautsGenerator(status)}`}>
-        {statusCodes[status].title}
-      </i>
+      <i className={`icon ion-md-${stautsGenerator(status)}`}></i>
+      {statusCodes[status].title}
     </div>
   )
 }

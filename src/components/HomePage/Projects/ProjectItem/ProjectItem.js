@@ -6,7 +6,7 @@ import StatusBox from "src/components/StatusBox/StatusBox.js"
 
 const ProjectItem = ({ imageSource, title, link, status }) => {
   return (
-    <figure>
+    <figure className={styles.projectItem}>
       <div
         className={styles.image}
         style={{ background: `url(${imageSource})` }}
@@ -17,7 +17,10 @@ const ProjectItem = ({ imageSource, title, link, status }) => {
           <div className={styles.status}>
             <StatusBox {...{ status }} />
           </div>
-          <Link to={`projects/${link}`}>مشاهده جزئیات</Link>
+          <Link className={styles.link} to={`projects/${link}`}>
+            مشاهده جزئیات
+            <i className="icon ion-ios-arrow-back"></i>
+          </Link>
         </div>
       </figcaption>
     </figure>

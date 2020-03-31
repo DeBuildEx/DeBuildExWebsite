@@ -28,5 +28,11 @@
     justify-items: center;
     gap: 2.25em;
     margin-bottom: 1em;
+    @media screen and(max-width:$largeDesktopBreakpoint) {
+      grid-template-columns: 280px 280px;
+    }
+    @media screen and(max-width:715px) {
+      grid-template-columns: 280px;
+    }
   }
 }

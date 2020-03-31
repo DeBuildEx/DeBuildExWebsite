@@ -28,6 +28,7 @@ const Projects = () => {
           <ProjectItem key={id} {...{ imageSource, title, link, status }} />
         ))}
       </div>
+      <button className={styles.more}>بیشتر</button>
     </div>
   )
 }
