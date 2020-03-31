@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styles from "./ProjectItem.module.scss"
 import { Link } from "gatsby"
-import StatusBox from "../../../StatusBox/StatusBox"
+import StatusBox from "src/components/StatusBox/StatusBox.js"
 
 const ProjectItem = ({ imageSource, title, link, status }) => {
   return (
