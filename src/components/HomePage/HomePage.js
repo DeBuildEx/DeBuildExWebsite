@@ -3,6 +3,7 @@ import Header from "src/components/HomePage/Header/Header"
 import Quotes from "src/components/HomePage/Quotes/Quotes"
 import Services from "src/components/HomePage/Services/Services"
 import Projects from "src/components/HomePage/Projects/Projects"
+import OurTeam from "./OurTeam/OurTeam"
 const HomePage = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Quotes />
       <Services />
       <Projects />
+      <OurTeam />
     </div>
   )
 }

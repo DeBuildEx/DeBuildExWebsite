@@ -7,10 +7,7 @@
   align-items: center;
   background-color: $white;
   //   background-color: pink;
-  border-bottom-left-radius: $curvedBorderRadius;
-  border-bottom-right-radius: $curvedBorderRadius;
-  border-top-left-radius: $curvedBorderRadius;
-  border-top-right-radius: $curvedBorderRadius;
+  @extend %curvedBorderRadius;
   @extend %normalSectionPadding;
 
   > * {

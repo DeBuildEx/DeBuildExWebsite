@@ -22,5 +22,13 @@
 %buttonDefaultStyles {
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
+}
+
+%curvedBorderRadius {
+  border-bottom-left-radius: $curvedBorderRadius;
+  border-bottom-right-radius: $curvedBorderRadius;
+  border-top-left-radius: $curvedBorderRadius;
+  border-top-right-radius: $curvedBorderRadius;
 }

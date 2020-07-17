@@ -1,20 +1,16 @@
 [
   {
-    "image": "./...",
-    "name": "محمد خواجوی",
-    "role": "React Native Developer",
-    "link": "mohammadkhajavi"
-  },
-  {
-    "image": "./...",
+    "image": "https://avatars3.githubusercontent.com/u/45519824?s=460&v=4",
     "name": "سینا مراددار",
     "role": "React Native Developer",
-    "link": "sinamoraddar"
+    "link": "sinamoraddar",
+    "contributedProjectsCount": 289
   },
   {
-    "image": "./...",
+    "image": "https://avatars1.githubusercontent.com/u/25561893?s=460&u=c53fcb7b60d8600cf43c66b73e607b4141d9a5e8&v=4",
     "name": "محمد خواجوی",
     "role": "React Native Developer",
-    "link": "mohammadkhajavi2"
+    "link": "mohammadkhajavi2",
+    "contributedProjectsCount": 289
   }
 ]
