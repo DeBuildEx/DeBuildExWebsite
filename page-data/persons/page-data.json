@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-persons-js","path":"/persons/","result":{"data":{"allPersonsJson":{"nodes":[{"link":"mohammadkhajavi","name":"محمد خواجوی"},{"link":"sinamoraddar","name":"سینا مراددار"},{"link":"mohammadkhajavi2","name":"محمد خواجوی"}]}},"pageContext":{}}}
+{"componentChunkName":"component---src-pages-persons-js","path":"/persons/","result":{"data":{"allPersonsJson":{"nodes":[{"link":"sinamoraddar","name":"سینا مراددار"},{"link":"mohammadkhajavi2","name":"محمد خواجوی"}]}},"pageContext":{}}}
