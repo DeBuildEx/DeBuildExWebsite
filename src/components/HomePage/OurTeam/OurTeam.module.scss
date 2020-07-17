@@ -1,0 +1,52 @@
+@import "src/assets/styles/libs/vars";
+@import "src/assets/styles/libs/placeholders";
+
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: $white;
+  @extend %curvedBorderRadius;
+  .container {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: auto auto;
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      padding: 1.5em;
+      border-radius: $normalBorderRadius;
+      .role {
+        color: $purple;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      .projectCount {
+        color: $darkGrey;
+      }
+      h2 {
+        font-weight: bold;
+        font-size: 1.25em;
+      }
+      a {
+        @extend %buttonDefaultStyles;
+        background-color: $purple;
+        color: white;
+        border-radius: $ellipseBorderRadius;
+        padding: 0.15em 1em;
+        font-size: 13px;
+      }
+      .profilePicture {
+        width: 120px;
+        height: 120px;
+        background-position: center !important;
+        background-size: cover !important;
+        border-radius: 50%;
+        background-repeat: no-repeat !important;
+      }
+    }
+  }
+}

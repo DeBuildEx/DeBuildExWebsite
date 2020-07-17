@@ -19,10 +19,13 @@ const Projects = ({ data: { allProjectsJson } }) => {
 }
 export const query = graphql`
   query MyProjectsQuery {
-    allProjectListJson {
+    allProjectsJson {
       nodes {
-        link
+        imageSource
         title
+        status
+        link
+        status
       }
     }
   }

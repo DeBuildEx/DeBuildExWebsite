@@ -5,10 +5,10 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Projects = () => {
   const {
-    allProjectListJson: { nodes: projectsArray },
+    allProjectsJson: { nodes: projectsArray },
   } = useStaticQuery(graphql`
     query MyQuery3 {
-      allProjectListJson {
+      allProjectsJson {
         nodes {
           link
           status
@@ -18,8 +18,6 @@ const Projects = () => {
       }
     }
   `)
-  // debugger
-  console.log(projectsArray)
   return (
     <div className={styles.projects}>
       <h1>آخرین پروژه ها</h1>
