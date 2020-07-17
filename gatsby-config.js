@@ -1,6 +1,6 @@
 const path = require("path")
 module.exports = {
-  pathPrefix: "/website",
+  pathPrefix: "/DeBuildExWebsite",
   siteMetadata: {
     title: `DeBuildEx`,
     description: `Develop ,build,execute .that's what we do best`,
