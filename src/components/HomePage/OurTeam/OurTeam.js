@@ -23,10 +23,9 @@ const OurTeam = () => {
         {data.allPersonsJson.nodes.map(
           ({ role, name, image, contributedProjectsCount, link }) => (
             <div className={styles.card}>
-              <div
-                className={styles.profilePicture}
-                style={{ background: `url(${image})` }}
-              ></div>
+              <div className={styles.profilePicture}>
+                <img src={image} alt={name} />
+              </div>
               <div className={styles.details}>
                 <p className={styles.role}>{role}</p>
 
