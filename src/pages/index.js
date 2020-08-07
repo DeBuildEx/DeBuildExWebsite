@@ -13,8 +13,6 @@ const IndexPage = ({ location }) => (
     <AppContext.Provider value={{ location }}>
       <HomePage />
     </AppContext.Provider>
-    <Link to="/projects">Projects</Link>
-    <Link to="/persons">Persons</Link>
   </Layout>
 )
 

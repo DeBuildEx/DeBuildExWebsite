@@ -18,12 +18,21 @@
   -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 }
-
+%purpleBoxShadow {
+  -webkit-box-shadow: 0px 0px 31px -9px $purple;
+  -moz-box-shadow: 0px 0px 31px -9px $purple;
+  box-shadow: 0px 0px 31px -9px $purple;
+}
 %buttonDefaultStyles {
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
+}
+%backgroundDefaultStyles {
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
 
 %curvedBorderRadius {
