@@ -7,22 +7,28 @@
   align-items: center;
   justify-content: flex-start;
   background-color: $white;
+  padding: 2em 1em;
   @extend %curvedBorderRadius;
   .container {
     display: grid;
-    gap: 2em;
+    gap: 5em;
     grid-template-columns: auto auto;
+    margin: 2em 0;
     .card {
+      position: relative;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       background: white;
       padding: 1.5em;
       border-radius: $normalBorderRadius;
+      height: 170px;
+      min-width: 490px;
       .role {
         color: $purple;
         font-weight: bold;
         font-size: 1.1em;
+        text-align: left;
       }
       .projectCount {
         color: $darkGrey;
@@ -30,6 +36,8 @@
       h2 {
         font-weight: bold;
         font-size: 1.25em;
+        width: 100%;
+        text-align: right;
       }
       a {
         @extend %buttonDefaultStyles;
@@ -40,12 +48,29 @@
         font-size: 13px;
       }
       .profilePicture {
-        width: 120px;
-        height: 120px;
+        width: 190px;
+        height: 190px;
         background-position: center !important;
         background-size: cover !important;
         border-radius: 50%;
         background-repeat: no-repeat !important;
+        position: absolute;
+        top: -10px;
+        right: -40px;
+      }
+      .details {
+        .info {
+          &,
+          > div {
+            display: flex;
+          }
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          a {
+            margin-right: 1em;
+          }
+        }
       }
     }
   }

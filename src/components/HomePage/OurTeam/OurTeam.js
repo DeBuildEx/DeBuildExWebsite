@@ -28,13 +28,18 @@ const OurTeam = () => {
                 style={{ background: `url(${image})` }}
               ></div>
               <div className={styles.details}>
-                <h2> {name}</h2>
-                <div className={styles.projectCount}>
-                  {" "}
-                  {contributedProjectsCount}
+                <p className={styles.role}>{role}</p>
+
+                <div className={styles.info}>
+                  <h2> {name}</h2>
+                  <div>
+                    <div className={styles.projectCount}>
+                      {" "}
+                      مشارکت در {contributedProjectsCount} پروژه{" "}
+                    </div>
+                    <Link to={"persons/" + link}>مشاهده جزئیات</Link>
+                  </div>
                 </div>
-                <div className={styles.role}>{role}</div>
-                <Link to={"persons/" + link}>مشاهده جزئیات</Link>
               </div>
             </div>
           )
