@@ -1,25 +1,31 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react"
-import PropTypes from "prop-types"
-
-import "./layout.scss"
-
-const Layout = ({ children }) => {
+import React from "react";
+import CurvedBox from "Components/Layout/CurvedBox/CurvedBox"
+import Navbar from "Components/Navbar/Navbar";
+import styles from './Layout.module.scss';
+function Layout(props) {
   return (
-    <>
-      <main>{children}</main>
-    </>
-  )
+    <main>
+      <CurvedBox loc='a' background="#358" style={{'z-index':'8'}}>
+        <header>
+        <Navbar></Navbar> 
+        <div className={styles.logo}>
+          <img src="/logo.png" alt="amir"/>
+        </div>
+        </header>
+        <section class={styles.pageMeta}>
+          <h1>
+            طراحی، ساخت و اجرا
+          </h1>
+        </section>
+        <div className={styles.pageThumb}>
+          <img src="/images/mainpagethumb.jpg" />
+        </div>
+      </CurvedBox>
+      <div className={styles.content}>
+        {props.children}
+      </div>
+    </main>
+  );
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+export default Layout;

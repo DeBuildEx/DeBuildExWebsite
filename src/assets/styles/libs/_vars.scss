@@ -1,32 +1,36 @@
-//breakpoints
-$extraLargeDesktopBreakpoint: 1400px;
-$largeDesktopBreakpoint: 1300px;
-$extraLargeTabletBreakpoint: 950px;
-$largeTabletBreakpoint_1: 700px;
-$largeTabletBreakpoint: 625px;
-$extraLargeMobileBreakpoint: 495px;
-$largeMobileBreakpoint: 430px;
-//colors
-$purple: #5b61ff;
-$white: #f0f0f0;
-$black: #333333;
-$grey: #999999;
-$darkGrey: #777777;
-$gallery: #f0f0f0;
-$quotesBackground: #ffffff;
-$orange: #ffc130;
-$green: #3ac994;
-$blue: #67b8ff;
+// breakPoints
+$mobileBreakPoint: 375px;
+$tabletBreakPoint: 768px;
+$desktopBreakPoint: 1440px;
 
-// border radius
-$buttonBorderRadius: 5px;
-$normalBorderRadius: 15px;
-$ellipseBorderRadius: 50px;
-$curvedBorderRadius: 3356% 1420px;
-//spacings
-$containerPadding: 6.5rem;
+/* colors */
+$backgroundColor: #e8e8e8;
+$basicOrange: #2b6a9f;
+$basicGray: #5f5f5f;
+$lightGray: #bfbfbf;
+$silver: #96939b;
+$purple: #e73204;
+$labelGray: #a19ea5;
+$mainTextColor: #3d3d3d;
+$popUpBackground: #87878786;
+$courseNameColor: #2573e8;
 
-//font sizes
-$normalHeaderFontSize: 1.4em;
-// transitionTimes
-$normalTransitionTime: 0.2s;
+/* typography */
+
+//body
+
+// fontSizes
+
+/* borderRadius */
+$buttonBorderRadius: 17.5px;
+$popUpBorderRadius: 100px;
+/* spacings */
+$normalSpacing: 3.5rem;
+$lightSpacing: 2.5rem;
+$shortSpacing: 3.5rem;
+$littleShortSpacing: 1.3rem;
+$veryShortSpacing: 0.1rem;
+
+/* lineHeights */
+
+$normalLineHeight: 1.5;

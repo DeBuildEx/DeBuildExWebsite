@@ -1,0 +1,36 @@
+.curveContainer{
+    position: relative;
+    z-index: 5;
+    
+    &::before,&::after{
+        width: 140vw;
+        background-color: inherit;
+        border-radius: 100%;
+        right: -20vw;
+        height: 160px;
+        position: absolute;
+        z-index: -1;
+    }
+    &::after{
+        bottom: -50px;
+    }
+    &::before{
+        top: -50px;
+    }
+    &.b,&.ba{
+        &::before{
+            content: '';
+        }
+    }
+    &.a,&.ba{
+        &::after{
+            content: '';
+        }
+    }
+    &.ba{
+        z-index: 7;
+    }
+    &.b{
+        z-index: 6;
+    }
+}

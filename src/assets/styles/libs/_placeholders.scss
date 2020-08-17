@@ -1,43 +1,139 @@
-@import "src/assets/styles/libs/vars";
+@import "~assets/styles/libs/vars";
 
-%normalPadding {
-  padding: 5rem $containerPadding;
-  @media screen and (max-width: 835px) {
-    padding: 3rem 1.5rem;
-  }
+%normalBoxShadow {
+  -webkit-box-shadow: 0px 1px 1.5px 0.75px rgba(0, 0, 0, 0.568);
+  -moz-box-shadow: 0px 1px 1.5px 0.75px rgba(0, 0, 0, 0.568);
+  box-shadow: 0px 1px 1.5px 0.75px rgba(0, 0, 0, 0.568);
 }
-%normalSectionPadding {
-  padding: 3.5rem $containerPadding;
-  @media screen and (max-width: 835px) {
-    padding: 3rem 1.5rem;
-  }
+%normalBoxShadow--orange {
+  -webkit-box-shadow: 0px 1px 1.5px 0.75px $basicOrange;
+  -moz-box-shadow: 0px 1px 1.5px 0.75px $basicOrange;
+  box-shadow: 0px 1px 1.5px 0.75px $basicOrange;
 }
 
-%heavyBoxShadow {
-  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
+%inputStyles {
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: start;
+    color: $labelGray;
+    min-height: 72px;
+    width: 260px;
+    position: relative;
+    margin-bottom: 25px;
+    @media screen and (max-width: 610px) {
+      width: 245px;
+    }
+    @media screen and (max-width: 560px) {
+      width: 195px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 185px;
+    }
+    @media screen and (max-width: 415px) {
+      width: 175px;
+    }
+
+    .error {
+      border-color: red;
+    }
+    span {
+      font-size: 0.7rem;
+      font-weight: 500;
+      animation-name: riseToTop;
+      animation-duration: 0.3s;
+      animation-timing-function: ease-out;
+    }
+    p {
+      position: absolute;
+      bottom: -44px;
+      margin: 0.3rem 0 0 0;
+      font-weight: 500;
+      color: black;
+      font-size: 0.68rem;
+      height: 40px;
+    }
+    input {
+      border: none;
+      border-bottom: 2px solid $labelGray;
+      padding: 7px 3px;
+      background: $backgroundColor;
+      font-size: 16px;
+      font-weight: 500;
+      &::placeholder {
+        color: $labelGray;
+      }
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 1000px $backgroundColor inset !important;
+      }
+    }
+
+    input:focus {
+      border-color: $basicOrange;
+    }
+  }
+
+  @keyframes riseToTop {
+    from {
+      transform: translateY(31px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 }
-%purpleBoxShadow {
-  -webkit-box-shadow: 0px 0px 31px -9px $purple;
-  -moz-box-shadow: 0px 0px 31px -9px $purple;
-  box-shadow: 0px 0px 31px -9px $purple;
-}
-%buttonDefaultStyles {
-  background: none;
+%gradientButton {
+  background-image: url('/assets/images/unnamed.jpg') !important;
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+  margin-top: 25px;
   border: none;
-  outline: none;
-  cursor: pointer;
-}
-%backgroundDefaultStyles {
-  background-position: center !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-}
+  height: 45px;
+  border-radius: 35px;
+  // width: 240px;
+  width: 265px;
+  transition: box-shadow 0.1s linear, background 0.1s linear;
 
-%curvedBorderRadius {
-  border-bottom-left-radius: $curvedBorderRadius;
-  border-bottom-right-radius: $curvedBorderRadius;
-  border-top-left-radius: $curvedBorderRadius;
-  border-top-right-radius: $curvedBorderRadius;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(232, 232, 232, 1) 0%,
+  //   rgba(86, 66, 86, 1) 20%,
+  //   rgba(86, 66, 86, 1) 35%,
+  //   rgba(252, 129, 74, 1) 65%,
+  //   rgba(252, 129, 74, 1) 80%,
+  //   rgba(232, 232, 232, 1) 100%
+  // );
+  background: black;
+  @media screen and (hover: hover) {
+    &:hover {
+      // background: linear-gradient(
+      //   90deg,
+      //   rgba(252, 129, 74, 1) 25%,
+      //   rgba(86, 66, 86, 1) 75%
+      // );
+      background: darken($basicOrange, 10%);
+      -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+    }
+  }
+  @media screen and (max-width: 560px) {
+    width: 195px;
+  }
+
+  // @media screen and(max-width:395px) {
+  //   width: 220px;
+  // }
 }
