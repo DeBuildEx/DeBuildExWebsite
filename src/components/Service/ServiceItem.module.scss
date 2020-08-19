@@ -1,6 +1,9 @@
+@import "~assets/styles/libs/placeholders";
+
 .serviceItemContainer {
     padding:20px;
   .serviceItem {
+      @extend %cardboxshadow;
     justify-content: space-between;
     background: #fff;
     display: flex;
