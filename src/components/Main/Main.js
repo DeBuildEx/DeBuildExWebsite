@@ -4,6 +4,7 @@ import CurvedBox from "Components/Layout/CurvedBox/CurvedBox";
 import styles from "./Main.module.scss";
 import Carousel from "react-elastic-carousel";
 import TestimonialItem from "Components/testimonial/testimonialItem";
+import ServiceItem from "Components/Service/ServiceItem";
 
 function Main() {
   var testimonialSettings = {
@@ -39,8 +40,42 @@ function Main() {
           </Carousel>
         </div>
       </section>
-      <CurvedBox loc="ba" background="#ccc" className=''>
-        سلام دنیا
+      <CurvedBox loc="ba" background="#ccc" className="">
+        <section>
+          <h3>خدمات ما</h3>
+          <div className={styles.servicesContainer}>
+            <ServiceItem
+              image="/images/services/graphic-design.png"
+              title="رابط کاربری"
+              subtitle="UI/UX"
+            />
+            <ServiceItem
+              image="/images/services/graphic-design.png"
+              title="رابط کاربری"
+              subtitle="UI/UX"
+            />
+            <ServiceItem
+              image="/images/services/graphic-design.png"
+              title="رابط کاربری"
+              subtitle="UI/UX"
+            />
+            <ServiceItem
+              image="/images/services/graphic-design.png"
+              title="رابط کاربری"
+              subtitle="UI/UX"
+            />
+            <ServiceItem
+              image="/images/services/graphic-design.png"
+              title="رابط کاربری"
+              subtitle="UI/UX"
+            />
+            <ServiceItem
+              image="/images/services/graphic-design.png"
+              title="رابط کاربری"
+              subtitle="UI/UX"
+            />
+          </div>
+        </section>
       </CurvedBox>
     </Layout>
   );

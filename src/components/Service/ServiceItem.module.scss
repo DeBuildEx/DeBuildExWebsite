@@ -1,0 +1,34 @@
+.serviceItemContainer {
+    padding:20px;
+  .serviceItem {
+    justify-content: space-between;
+    background: #fff;
+    display: flex;
+    width: 33.3333%;
+    min-width: 350px;
+    padding: 2em;
+    flex-direction: row;
+    border-radius: 10px;
+    .image {
+      max-width: 50%;
+      img {
+        max-width: 90%;
+        display: flex;
+      }
+    }
+    .title {
+      /*  align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; */
+      h2 {
+        font-weight: 600;
+        font-size: 30px;
+        margin: 0 0 20px;
+      }
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+}
