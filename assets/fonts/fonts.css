@@ -20,111 +20,111 @@ This set of fonts are used in this project under the license: (.....)
     font-family: IRANSans;
     font-style: normal;
     font-weight: 900;
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_Black.eot");
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_Black.eot?#iefix")
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_Black.eot");
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_Black.eot?#iefix")
         format("embedded-opentype"),
       /* IE6-8 */
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff2/IRANSansWeb(FaNum)_Black.woff2")
+        url("./IRANSansWeb/woff2/IRANSansWeb(FaNum)_Black.woff2")
         format("woff2"),
       /* FF39+,Chrome36+, Opera24+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff/IRANSansWeb(FaNum)_Black.woff")
+        url("./IRANSansWeb/woff/IRANSansWeb(FaNum)_Black.woff")
         format("woff"),
       /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/ttf/IRANSansWeb(FaNum)_Black.ttf")
+        url("./IRANSansWeb/ttf/IRANSansWeb(FaNum)_Black.ttf")
         format("truetype");
   }
   @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: bold;
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_Bold.eot");
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_Bold.eot");
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix")
         format("embedded-opentype"),
       /* IE6-8 */
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff2/IRANSansWeb(FaNum)_Bold.woff2")
+        url("./IRANSansWeb/woff2/IRANSansWeb(FaNum)_Bold.woff2")
         format("woff2"),
       /* FF39+,Chrome36+, Opera24+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff/IRANSansWeb(FaNum)_Bold.woff")
+        url("./IRANSansWeb/woff/IRANSansWeb(FaNum)_Bold.woff")
         format("woff"),
       /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/ttf/IRANSansWeb(FaNum)_Bold.ttf")
+        url("./IRANSansWeb/ttf/IRANSansWeb(FaNum)_Bold.ttf")
         format("truetype");
   }
   @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 500;
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_Medium.eot");
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix")
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_Medium.eot");
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix")
         format("embedded-opentype"),
       /* IE6-8 */
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff2/IRANSansWeb(FaNum)_Medium.woff2")
+        url("./IRANSansWeb/woff2/IRANSansWeb(FaNum)_Medium.woff2")
         format("woff2"),
       /* FF39+,Chrome36+, Opera24+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff/IRANSansWeb(FaNum)_Medium.woff")
+        url("./IRANSansWeb/woff/IRANSansWeb(FaNum)_Medium.woff")
         format("woff"),
       /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/ttf/IRANSansWeb(FaNum)_Medium.ttf")
+        url("./IRANSansWeb/ttf/IRANSansWeb(FaNum)_Medium.ttf")
         format("truetype");
   }
   @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 300;
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_Light.eot");
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_Light.eot?#iefix")
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_Light.eot");
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_Light.eot?#iefix")
         format("embedded-opentype"),
       /* IE6-8 */
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff2/IRANSansWeb(FaNum)_Light.woff2")
+        url("./IRANSansWeb/woff2/IRANSansWeb(FaNum)_Light.woff2")
         format("woff2"),
       /* FF39+,Chrome36+, Opera24+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff/IRANSansWeb(FaNum)_Light.woff")
+        url("./IRANSansWeb/woff/IRANSansWeb(FaNum)_Light.woff")
         format("woff"),
       /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/ttf/IRANSansWeb(FaNum)_Light.ttf")
+        url("./IRANSansWeb/ttf/IRANSansWeb(FaNum)_Light.ttf")
         format("truetype");
   }
   @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 200;
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_UltraLight.eot");
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix")
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix")
         format("embedded-opentype"),
       /* IE6-8 */
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff2/IRANSansWeb(FaNum)_UltraLight.woff2")
+        url("./IRANSansWeb/woff2/IRANSansWeb(FaNum)_UltraLight.woff2")
         format("woff2"),
       /* FF39+,Chrome36+, Opera24+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff/IRANSansWeb(FaNum)_UltraLight.woff")
+        url("./IRANSansWeb/woff/IRANSansWeb(FaNum)_UltraLight.woff")
         format("woff"),
       /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/ttf/IRANSansWeb(FaNum)_UltraLight.ttf")
+        url("./IRANSansWeb/ttf/IRANSansWeb(FaNum)_UltraLight.ttf")
         format("truetype");
   }
   @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: normal;
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum).eot");
-    src: url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/eot/IRANSansWeb(FaNum).eot?#iefix")
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum).eot");
+    src: url("./IRANSansWeb/eot/IRANSansWeb(FaNum).eot?#iefix")
         format("embedded-opentype"),
-      /* IE6-8 */ url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff2/IRANSansWeb(FaNum).woff2")
+      /* IE6-8 */ url("./IRANSansWeb/woff2/IRANSansWeb(FaNum).woff2")
         format("woff2"),
       /* FF39+,Chrome36+, Opera24+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/woff/IRANSansWeb(FaNum).woff")
+        url("./IRANSansWeb/woff/IRANSansWeb(FaNum).woff")
         format("woff"),
       /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url("/DeBuildExWebsite/assets/fonts/IRANSansWeb/ttf/IRANSansWeb(FaNum).ttf")
+        url("./IRANSansWeb/ttf/IRANSansWeb(FaNum).ttf")
         format("truetype");
   }
   
   /* vazir font */
   @font-face {
     font-family: Vazir;
-    src: url("/DeBuildExWebsite/assets/fonts/Vazir/Vazir.eot");
-    src: url("/DeBuildExWebsite/assets/fonts/Vazir/Vazir.eot?#iefix") format("embedded-opentype"),
-      url("/DeBuildExWebsite/assets/fonts/Vazir/Vazir.woff") format("woff"),
-      url("/DeBuildExWebsite/assets/fonts/Vazir/Vazir.ttf") format("truetype");
+    src: url("./Vazir/Vazir.eot");
+    src: url("./Vazir/Vazir.eot?#iefix") format("embedded-opentype"),
+      url("./Vazir/Vazir.woff") format("woff"),
+      url("./Vazir/Vazir.ttf") format("truetype");
     font-weight: normal;
   }
   /* mahboube mehravar fonts */
