@@ -29,8 +29,18 @@
     }
     &.ba{
         z-index: 7;
+        padding-top:30px;
+        margin-top:90px;
+        padding-bottom:30px;
+        margin-bottom:90px;
     }
     &.b{
+        padding-top:30px;
+        margin-top:90px;
         z-index: 6;
+    }
+    &.a{
+        padding-bottom:30px;
+        margin-bottom:90px;
     }
 }

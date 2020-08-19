@@ -39,7 +39,7 @@ function Main() {
           </Carousel>
         </div>
       </section>
-      <CurvedBox loc="ba" background="#ccc" className={styles["p-90"]+' '+styles["m-100"]}>
+      <CurvedBox loc="ba" background="#ccc" className=''>
         سلام دنیا
       </CurvedBox>
     </Layout>
