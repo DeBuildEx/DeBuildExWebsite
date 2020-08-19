@@ -1,0 +1,23 @@
+.testimonialItem {
+  display: flex;
+  flex-direction: column;
+  .meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 100px;
+      border-radius: 100%;
+      margin:auto;
+    }
+    span {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  }
+  p {
+    text-align: center;
+    padding: 1em 0;
+  }
+}

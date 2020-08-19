@@ -10,12 +10,12 @@
     "react-dnd": "^10.0.2",
     "react-dnd-html5-backend": "^10.0.2",
     "react-dom": "^16.11.0",
-    "react-gravatar": "^2.6.3",
+    "react-elastic-carousel": "^0.7.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-select": "^3.0.8",
-    "react-select-search": "^0.10.1",
     "react-transition-group": "^1.2.1",
+    "styled-components": "^5.1.1",
     "sweetalert2": "^9.7.1"
   },
   "scripts": {

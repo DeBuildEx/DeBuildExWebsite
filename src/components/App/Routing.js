@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-//import NotFound from "Components/NotFound/NotFound";
+import NotFound from "Components/NotFound/NotFound";
 import Main from "Components/Main/Main";
 
 function App() {
@@ -10,10 +10,11 @@ function App() {
             <Route
               path="/"
               exact
-              render={(routeProps) => <Redirect {...routeProps} to="/login" />}
+              //render={(routeProps) => <Redirect {...routeProps} to="/login" />}
+              component={Main}
             />
             <Route path="/signup" exact component={Main} />
-            <Route component={Main} />
+            <Route component={NotFound} />
           </Switch>
     </BrowserRouter>
   );
