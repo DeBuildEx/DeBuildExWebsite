@@ -1,8 +1,8 @@
 {
-  "name": "debuildExWebsite",
+  "name": "debuildexwebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://debuildex.github.io/DeBuildExWebsite/",
+  "homepage": "https://debuildex.github.io/DeBuildExWebsite",
   "dependencies": {
     "axios": "latest",
     "node-sass": "^4.13.0",
@@ -21,8 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && npm run build-sw",
-    "build-sw": "node ./src/sw-build.js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "json-server": "json-server --watch db.json",

@@ -14,7 +14,7 @@ function App() {
               component={Main}
             />
             <Route path="/signup" exact component={Main} />
-            <Route component={NotFound} />
+           {false && <Route component={NotFound} />}
           </Switch>
     </BrowserRouter>
   );
