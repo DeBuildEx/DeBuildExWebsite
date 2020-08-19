@@ -5,6 +5,7 @@ import styles from "./Main.module.scss";
 import Carousel from "react-elastic-carousel";
 import TestimonialItem from "Components/testimonial/testimonialItem";
 import ServiceItem from "Components/Service/ServiceItem";
+import SingularProjectItem from "Components/Projects/Singular/SingularProjectItem";
 
 function Main() {
   var testimonialSettings = {
@@ -77,6 +78,13 @@ function Main() {
           </div>
         </section>
       </CurvedBox>
+      <section>
+        <h3>آخرین پروژه ها</h3>
+        <div className={styles.projectsContainer}>
+        <SingularProjectItem name="پروژه آرت ورک" status="1"
+        picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" />
+        </div>
+      </section>
     </Layout>
   );
 }

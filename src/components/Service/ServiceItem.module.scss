@@ -3,12 +3,12 @@
 .serviceItemContainer {
     padding:20px;
   .serviceItem {
-      @extend %cardboxshadow;
+    @extend %cardboxshadow;
+    width: 33.3333%;
+    min-width: 350px;
     justify-content: space-between;
     background: #fff;
     display: flex;
-    width: 33.3333%;
-    min-width: 350px;
     padding: 2em;
     flex-direction: row;
     border-radius: 10px;
