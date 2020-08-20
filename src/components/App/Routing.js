@@ -12,7 +12,7 @@ function App() {
               //render={(routeProps) => <Redirect {...routeProps} to="/login" />}
               component={Main}
             />
-           <Route path="/signup" exact component={Main} />
+           <Route path="/signup" exact component={NotFound} />
            {false && <Route component={NotFound} />}
     </HashRouter>
   );

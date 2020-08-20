@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "Components/Layout/Layout";
+import Layout from "Components/Layout/Layout"; 
 import CurvedBox from "Components/Layout/CurvedBox/CurvedBox";
 function NotFound() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import CurvedBox from "Components/Layout/CurvedBox/CurvedBox";
-import Navbar from "Components/Navbar/Navbar";
+import Navbar from "Components/NavBar/NavBar";
 import styles from "./Layout.module.scss";
 function Layout(props) {
   return (
