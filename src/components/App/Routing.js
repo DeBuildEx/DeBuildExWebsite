@@ -13,8 +13,8 @@ function App() {
               //render={(routeProps) => <Redirect {...routeProps} to="/login" />}
               component={Main}
             />
-            <Route path="/signup" exact component={Main} />
-           {false && <Route component={NotFound} />}
+           <Route path="/signup" exact component={Main} />
+           <Route component={NotFound} />
           </Switch>
     </BrowserRouter>
   );
