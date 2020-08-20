@@ -9,7 +9,7 @@ function Layout(props) {
         <header>
           <Navbar></Navbar>
           <div className={styles.logo}>
-            <img src="/logo.png" alt="amir" />
+            <img src={process.env.PUBLIC_URL+"/logo.png"} alt="amir" />
           </div>
         </header>
         <section class={styles.pageMeta}>

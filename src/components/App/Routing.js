@@ -1,12 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect , HashRouter} from "react-router-dom";
 import NotFound from "Components/NotFound/NotFound";
 import Main from "Components/Main/Main";
 
 function App() {
   return (
-    <BrowserRouter>
-          <Switch>
+    <HashRouter basename="/">
             <Route
               path="/"
               exact
@@ -14,9 +13,8 @@ function App() {
               component={Main}
             />
            <Route path="/signup" exact component={Main} />
-           <Route component={NotFound} />
-          </Switch>
-    </BrowserRouter>
+           {false && <Route component={NotFound} />}
+    </HashRouter>
   );
 }
 

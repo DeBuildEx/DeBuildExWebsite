@@ -16,7 +16,7 @@ function Main() {
   return (
     <Layout
       pageTitle="طراحی، ساخت و اجرا"
-      pageThumb="/images/mainpagethumb.jpg"
+      pageThumb={process.env.PUBLIC_URL + "/images/mainpagethumb.jpg"}
     >
       <section>
         <h3>نظرات مشتریان</h3>
@@ -46,32 +46,51 @@ function Main() {
           <h3>خدمات ما</h3>
           <div className={styles.servicesContainer}>
             <ServiceItem
-              image="/images/services/graphic-design.png"
+              image={
+                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+              }
               title="رابط کاربری"
               subtitle="UI/UX"
             />
             <ServiceItem
-              image="/images/services/graphic-design.png"
+              image={
+                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+              }
               title="رابط کاربری"
               subtitle="UI/UX"
-            />
+            />{" "}
             <ServiceItem
-              image="/images/services/graphic-design.png"
+              image={
+                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+              }
               title="رابط کاربری"
               subtitle="UI/UX"
-            />
+            />{" "}
             <ServiceItem
-              image="/images/services/graphic-design.png"
+              image={
+                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+              }
               title="رابط کاربری"
               subtitle="UI/UX"
-            />
+            />{" "}
             <ServiceItem
-              image="/images/services/graphic-design.png"
+              image={
+                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+              }
               title="رابط کاربری"
               subtitle="UI/UX"
-            />
+            />{" "}
             <ServiceItem
-              image="/images/services/graphic-design.png"
+              image={
+                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+              }
+              title="رابط کاربری"
+              subtitle="UI/UX"
+            />{" "}
+            <ServiceItem
+              image={
+                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+              }
               title="رابط کاربری"
               subtitle="UI/UX"
             />
@@ -81,8 +100,11 @@ function Main() {
       <section>
         <h3>آخرین پروژه ها</h3>
         <div className={styles.projectsContainer}>
-        <SingularProjectItem name="پروژه آرت ورک" status="1"
-        picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" />
+          <SingularProjectItem
+            name="پروژه آرت ورک"
+            status="1"
+            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
+          />
         </div>
       </section>
     </Layout>
