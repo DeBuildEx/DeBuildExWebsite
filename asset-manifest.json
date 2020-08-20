@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DeBuildExWebsite/static/css/main.68897740.chunk.css",
-    "main.js": "/DeBuildExWebsite/static/js/main.0284064f.chunk.js",
-    "main.js.map": "/DeBuildExWebsite/static/js/main.0284064f.chunk.js.map",
+    "main.js": "/DeBuildExWebsite/static/js/main.85f4e230.chunk.js",
+    "main.js.map": "/DeBuildExWebsite/static/js/main.85f4e230.chunk.js.map",
     "runtime-main.js": "/DeBuildExWebsite/static/js/runtime-main.86a164ab.js",
     "runtime-main.js.map": "/DeBuildExWebsite/static/js/runtime-main.86a164ab.js.map",
     "static/css/2.91073758.chunk.css": "/DeBuildExWebsite/static/css/2.91073758.chunk.css",
-    "static/js/2.dcebee4e.chunk.js": "/DeBuildExWebsite/static/js/2.dcebee4e.chunk.js",
-    "static/js/2.dcebee4e.chunk.js.map": "/DeBuildExWebsite/static/js/2.dcebee4e.chunk.js.map",
+    "static/js/2.4029f755.chunk.js": "/DeBuildExWebsite/static/js/2.4029f755.chunk.js",
+    "static/js/2.4029f755.chunk.js.map": "/DeBuildExWebsite/static/js/2.4029f755.chunk.js.map",
     "index.html": "/DeBuildExWebsite/index.html",
-    "precache-manifest.98c64662c6aa1e9fb196983500764c52.js": "/DeBuildExWebsite/precache-manifest.98c64662c6aa1e9fb196983500764c52.js",
+    "precache-manifest.0997e7e5aa39c8cc0ef5af7ce3df9c56.js": "/DeBuildExWebsite/precache-manifest.0997e7e5aa39c8cc0ef5af7ce3df9c56.js",
     "service-worker.js": "/DeBuildExWebsite/service-worker.js",
     "static/css/2.91073758.chunk.css.map": "/DeBuildExWebsite/static/css/2.91073758.chunk.css.map",
     "static/css/main.68897740.chunk.css.map": "/DeBuildExWebsite/static/css/main.68897740.chunk.css.map"
@@ -17,8 +17,8 @@
   "entrypoints": [
     "static/js/runtime-main.86a164ab.js",
     "static/css/2.91073758.chunk.css",
-    "static/js/2.dcebee4e.chunk.js",
+    "static/js/2.4029f755.chunk.js",
     "static/css/main.68897740.chunk.css",
-    "static/js/main.0284064f.chunk.js"
+    "static/js/main.85f4e230.chunk.js"
   ]
 }
