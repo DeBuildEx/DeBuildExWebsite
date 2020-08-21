@@ -3,12 +3,13 @@
 .SingularProjectItemContainer {
   padding: 20px;
   .SingularProjectItem {
-    border-radius: 10px;
+    border-radius: 15px;
     @extend %cardboxshadow;
     width: 33.3333%;
-    min-width: 350px;
+    min-width: 280px;
+    padding-bottom: 7px;
     .image{
-        height: 200px;
+        height: 150px;
         width: 100%;
         background-position:center;
         background-size: cover;
@@ -22,7 +23,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0 5px 10px;
+        margin: 5px 10px;
+        .projectInfo{
+          border-radius: 20px;
+          color:#fff;
+          &.onprogress{
+            background-color: yellow;
+          }
+          &.success{
+            background-color: green;
+          }
+          &.ontest{
+            background-color: blue;
+          }
+        }
     }
   }
 }

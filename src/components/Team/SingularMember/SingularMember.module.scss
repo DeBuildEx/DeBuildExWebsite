@@ -1,0 +1,50 @@
+@import "~assets/styles/libs/placeholders";
+.singularMemberItemContainer {
+  padding: 40px 20px;
+  width: 50%;
+  .singularMemberItem {
+    min-width: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .avatar{
+        width: 200px;
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        img{
+            @extend %cardboxshadow;
+            max-width: 100%;
+            border-radius: 100%;
+        }
+    }
+    .content{
+        border-radius: 15px;
+        padding-bottom: 10px;
+        display: inline-block;
+        margin-right: 100px;
+        padding-right: 110px;
+        padding-left:20px;
+        width: 100%;
+        background-color: #fff;
+        h4{
+            text-align: left;
+            color: purple;
+            margin-bottom: 0;
+        }
+        h3{
+            text-align: right;
+            color:black;
+            margin:10px 0;
+        }
+        span{
+            color:#888;
+            float:right;
+            font-size: 14px;
+        }
+        button{
+            float: left;
+        }
+    }
+  }
+}

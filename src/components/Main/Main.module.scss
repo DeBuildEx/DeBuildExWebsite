@@ -25,12 +25,24 @@ section {
         }
     }
 }
-.servicesContainer,.projectsContainer{
+.servicesContainer,.projectsContainer,.teamContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1024px;
+    margin: auto;    
 }
 .projectsContainer{
-    
+
+}
+.moreProjects{
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    padding: 8px 8px;
+    width: 150px;
+}
+.teamContainer{
+
 }

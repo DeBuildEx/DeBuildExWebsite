@@ -34,7 +34,7 @@ function Navbar(props) {
             </button>
         </a>
         <a>
-            <button className="flat light">
+            <button className="flat  light">
                 <i className="custom search"/>
             </button>
         </a>

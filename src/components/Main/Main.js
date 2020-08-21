@@ -6,6 +6,7 @@ import Carousel from "react-elastic-carousel";
 import TestimonialItem from "Components/testimonial/testimonialItem";
 import ServiceItem from "Components/Service/ServiceItem";
 import SingularProjectItem from "Components/Projects/Singular/SingularProjectItem";
+import SingularMember from "Components/Team/SingularMember/SingularMember";
 
 function Main() {
   var testimonialSettings = {
@@ -105,8 +106,83 @@ function Main() {
             status="1"
             picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
           />
+          <SingularProjectItem
+            name="پروژه آرت ورک"
+            status="2"
+            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
+          />{" "}
+          <SingularProjectItem
+            name="پروژه آرت ورک"
+            status="1"
+            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
+          />{" "}
+          <SingularProjectItem
+            name="پروژه آرت ورک"
+            status="3"
+            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
+          />
+          <SingularProjectItem
+            name="پروژه آرت ورک"
+            status="1"
+            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
+          />{" "}
+          <SingularProjectItem
+            name="پروژه آرت ورک"
+            status="3"
+            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
+          />
         </div>
+        <button className={styles.moreProjects + " secondery"}>بیشتر</button>
       </section>
+      <CurvedBox loc="ba" background="#ccc" className="">
+        <section>
+          <h3>تیم ما</h3>
+          <div className={styles.teamContainer}>
+            <SingularMember
+              name="امیرمحمد سلطانیان"
+              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
+              link="#"
+              role="توسعه دهنده front-end"
+              count="53"
+            />
+            <SingularMember
+              name="امیرمحمد سلطانیان"
+              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
+              link="#"
+              role="توسعه دهنده front-end"
+              count="53"
+            />
+            <SingularMember
+              name="امیرمحمد سلطانیان"
+              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
+              link="#"
+              role="توسعه دهنده front-end"
+              count="53"
+            />
+            <SingularMember
+              name="امیرمحمد سلطانیان"
+              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
+              link="#"
+              role="توسعه دهنده front-end"
+              count="53"
+            />
+            <SingularMember
+              name="امیرمحمد سلطانیان"
+              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
+              link="#"
+              role="توسعه دهنده front-end"
+              count="53"
+            />
+            <SingularMember
+              name="امیرمحمد سلطانیان"
+              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
+              link="#"
+              role="توسعه دهنده front-end"
+              count="53"
+            />
+          </div>
+        </section>
+      </CurvedBox>
     </Layout>
   );
 }
