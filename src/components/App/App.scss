@@ -5,12 +5,12 @@
 @import "~assets/styles/base/fonts";
 
 #root {
-  background: $backgroundColor;
+  background: #fff;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  color: $mainTextColor;
+  color: $primaryText;
 
   * {
     box-sizing: border-box;

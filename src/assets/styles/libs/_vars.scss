@@ -4,33 +4,32 @@ $tabletBreakPoint: 768px;
 $desktopBreakPoint: 1440px;
 
 /* colors */
-$backgroundColor: #e8e8e8;
-$basicOrange: #2b6a9f;
-$basicGray: #5f5f5f;
-$lightGray: #bfbfbf;
-$silver: #96939b;
-$purple: #e73204;
-$labelGray: #a19ea5;
-$mainTextColor: #3d3d3d;
-$popUpBackground: #87878786;
-$courseNameColor: #2573e8;
+$primaryColor: #5b61ff;
+$primaryText: #333333;
+$primaryWhite:#fff;
+$seconderyWhite: #fafafa;
+$green: #3ac994;
+$blue: #67b8ff;
+$yellow: #ffc130;
+$seconderyText:#777777;
 
 /* typography */
-
-//body
-
-// fontSizes
+$defaultFont:'Vazir';
+$bodySize:16px;
+$titleSize:18px;
+$smallSize:13px;
+$bigSize:22px;
+$biggerSize:36px;
+$biggestSize:50px;
 
 /* borderRadius */
-$buttonBorderRadius: 17.5px;
-$popUpBorderRadius: 100px;
+$buttonBorderRadius: 20px;
 /* spacings */
-$normalSpacing: 3.5rem;
-$lightSpacing: 2.5rem;
-$shortSpacing: 3.5rem;
-$littleShortSpacing: 1.3rem;
-$veryShortSpacing: 0.1rem;
 
 /* lineHeights */
-
 $normalLineHeight: 1.5;
+
+:export{
+    primaryColor:$primaryColor;
+    seconderyWhite:$seconderyWhite;
+}

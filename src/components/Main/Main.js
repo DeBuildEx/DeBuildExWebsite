@@ -7,7 +7,7 @@ import TestimonialItem from "Components/testimonial/testimonialItem";
 import ServiceItem from "Components/Service/ServiceItem";
 import SingularProjectItem from "Components/Projects/Singular/SingularProjectItem";
 import SingularMember from "Components/Team/SingularMember/SingularMember";
-
+import vars from "assets/styles/libs/_vars.scss";
 function Main() {
   var testimonialSettings = {
     isRTL: true,
@@ -42,7 +42,7 @@ function Main() {
           </Carousel>
         </div>
       </section>
-      <CurvedBox loc="ba" background="#ccc" className="">
+      <CurvedBox loc="ba" background={vars.primaryColor} className="">
         <section>
           <h3>خدمات ما</h3>
           <div className={styles.servicesContainer}>

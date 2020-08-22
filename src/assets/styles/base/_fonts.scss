@@ -1,6 +1,7 @@
+@import "~assets/styles/libs/vars";
 /* basic font styles */
 * {
-  font-family: "IRANSans", sans-serif;
+  font-family: $defaultFont, sans-serif;
   font-weight: normal;
   direction: rtl;
 }
