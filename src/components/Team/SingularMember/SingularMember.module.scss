@@ -53,20 +53,23 @@
     }
   }
   @media screen and(max-width:450px) {
-      &:first-child{
-        margin-top: 100px;
-      }
-    min-width: 100%;
-    padding: 110px 20px;
-    .singularMemberItem{
-    .avatar {
-      top: -200px;
-      right: 50%;
-      transform: translateX(50%);
+    &:first-child {
+      margin-top: 90px;
     }
-    .content {
-      margin-right: 0;
-      padding-right: 20px;
-    }}
+    min-width: 100%;
+    padding: 100px 20px;
+    .singularMemberItem {
+      .avatar {
+        top: -170px;
+        right: 50%;
+        z-index: 2;
+        transform: translateX(50%);
+      }
+      .content {
+        z-index: 3;
+        margin-right: 0;
+        padding-right: 20px;
+      }
+    }
   }
 }
