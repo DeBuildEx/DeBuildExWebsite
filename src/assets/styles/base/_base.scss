@@ -32,6 +32,10 @@ a {
 }
 
 button {
+  i{
+    color: inherit !important;
+    vertical-align: middle;
+  }
   border: none;
   border-radius: $buttonBorderRadius;
   padding: 5px 15px;

@@ -28,6 +28,12 @@
         .projectInfo{
           border-radius: 20px;
           color:#fff;
+          i{
+            margin-right: 10px;
+          }
+        }
+        .forwardIcon i{
+          font-size: inherit;
         }
     }
   }

@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./SingularProjectItem.module.scss";
+import MaterialIcon from "material-icons-react";
 const renderStatus = (i, callback) => {
   switch (i) {
     case '1':
-      return callback({ name: "انجام شده", class: "green" });
+      return callback({ name: "انجام شده", class: "green", icon:"check_circle" });
     case '2':
-      return callback({ name: "در حال اجرا", class: "yellow" });
+      return callback({ name: "در حال اجرا", class: "yellow" ,icon:"av_timer" });
     case '3':
-      return callback({ name: "در حال تست", class: "blue" });
+      return callback({ name: "در حال تست", class: "blue", icon:"playlist_add_check" });
   }
   //return;
 };
@@ -25,10 +26,11 @@ function SingularProjectItem({ picture, name, status, link }) {
           {renderStatus(status, (o) => (
             <button className={styles.projectInfo + " " + o.class}>
               {o.name}
+              <MaterialIcon icon={o.icon} />
             </button>
           ))}
-          <button className={"flat dark"}>
-            مشاهده جزئیات <i className={"custom forward"}></i>
+          <button className={"flat dark "+styles.forwardIcon}>
+            مشاهده جزئیات <MaterialIcon icon='arrow_back_ios' />
           </button>
         </div>
       </div>
