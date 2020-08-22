@@ -8,6 +8,7 @@ import ServiceItem from "Components/Service/ServiceItem";
 import SingularProjectItem from "Components/Projects/Singular/SingularProjectItem";
 import SingularMember from "Components/Team/SingularMember/SingularMember";
 import vars from "assets/styles/libs/_vars.scss";
+import Contact from "Components/Contact/Contact";
 function Main() {
   var testimonialSettings = {
     isRTL: true,
@@ -177,7 +178,7 @@ function Main() {
         </section>
       </CurvedBox>
       <CurvedBox loc="a" background={vars.primaryColor}  style={{paddingTop:'100px'}}>
-        salam
+        <Contact />
       </CurvedBox>
     </Layout>
   );
