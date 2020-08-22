@@ -21,6 +21,7 @@ header {
     padding: 2em 1em;
     h1{
         margin: 0;
+        text-align: center;
     }
 }
 .pageThumb{
@@ -29,6 +30,7 @@ header {
     max-height: 100px;
     img{
         max-height: 300px;
+        max-width: 95%;
         margin: auto;
     }
 }

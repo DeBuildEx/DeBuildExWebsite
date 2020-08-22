@@ -3,9 +3,9 @@
 .serviceItemContainer {
     padding:20px;
     width: 33.3333%;
+    min-width: 280px;
   .serviceItem {
     @extend %lightGrayBoxShadow;
-    min-width: 280px;
     justify-content: space-between;
     background: #fff;
     display: flex;

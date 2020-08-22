@@ -2,11 +2,12 @@
 
 .SingularProjectItemContainer {
   padding: 20px;
+  min-width: 280px;
   .SingularProjectItem {
+    min-width: 100%;
     border-radius: 15px;
     @extend %cardBoxShadow;
     width: 33.3333%;
-    min-width: 280px;
     padding-bottom: 7px;
     .image{
         height: 150px;
