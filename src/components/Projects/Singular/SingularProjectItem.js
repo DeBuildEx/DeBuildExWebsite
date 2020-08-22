@@ -3,11 +3,11 @@ import styles from "./SingularProjectItem.module.scss";
 const renderStatus = (i, callback) => {
   switch (i) {
     case '1':
-      return callback({ name: "انجام شده", class: "success" });
+      return callback({ name: "انجام شده", class: "green" });
     case '2':
-      return callback({ name: "در حال اجرا", class: "onprogress" });
+      return callback({ name: "در حال اجرا", class: "yellow" });
     case '3':
-      return callback({ name: "در حال تست", class: "ontest" });
+      return callback({ name: "در حال تست", class: "blue" });
   }
   //return;
 };
@@ -23,11 +23,11 @@ function SingularProjectItem({ picture, name, status, link }) {
         <h3>{name}</h3>
         <div className={styles.meta}>
           {renderStatus(status, (o) => (
-            <button className={styles.projectInfo + " " + styles[o.class]}>
+            <button className={styles.projectInfo + " " + o.class}>
               {o.name}
             </button>
           ))}
-          <button className={"flat"}>
+          <button className={"flat dark"}>
             مشاهده جزئیات <i className={"custom forward"}></i>
           </button>
         </div>

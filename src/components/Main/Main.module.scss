@@ -1,3 +1,5 @@
+@import "~assets/styles/libs/vars";
+
 .p-90{
     padding-top:30px;
 }
@@ -18,10 +20,14 @@ section {
         font-size: 42px;
         background: none;
         box-shadow: none;
+        color:$darkGray;
         &:hover:enabled,&:focus:enabled{
             background: none;
-            color:purple;
+            color:$primaryColor;
             box-shadow: none;
+        }
+        &:disabled{
+            color:$lightGray;
         }
     }
 }
@@ -42,6 +48,7 @@ section {
     justify-content: center;
     padding: 8px 8px;
     width: 150px;
+    font-weight: 600;
 }
 .teamContainer{
 

@@ -42,17 +42,10 @@ function Main() {
           </Carousel>
         </div>
       </section>
-      <CurvedBox loc="ba" background={vars.primaryColor} className="">
+      <CurvedBox loc="ba" background={vars.seconderyWhite} className="">
         <section>
           <h3>خدمات ما</h3>
           <div className={styles.servicesContainer}>
-            <ServiceItem
-              image={
-                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
-              }
-              title="رابط کاربری"
-              subtitle="UI/UX"
-            />
             <ServiceItem
               image={
                 process.env.PUBLIC_URL + "/images/services/graphic-design.png"
@@ -132,9 +125,9 @@ function Main() {
             picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
           />
         </div>
-        <button className={styles.moreProjects + " secondery"}>بیشتر</button>
+        <button className={styles.moreProjects + " primary"}>بیشتر</button>
       </section>
-      <CurvedBox loc="ba" background="#ccc" className="">
+      <CurvedBox loc="ba" background={vars.seconderyWhite} className="">
         <section>
           <h3>تیم ما</h3>
           <div className={styles.teamContainer}>

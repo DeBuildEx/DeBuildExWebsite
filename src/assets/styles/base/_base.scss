@@ -24,6 +24,13 @@ a {
   }
 }
 
+.light {
+  color: $primaryWhite;
+}
+.dark {
+  color: $primaryColor;
+}
+
 button {
   border: none;
   border-radius: $buttonBorderRadius;
@@ -38,12 +45,15 @@ button {
   }
   &.flat {
     background: none;
-    &.light {
-      color: $primaryWhite;
-    }
-    &.dark {
-      color: $primaryColor;
-    }
+  }
+  &.green{
+    background: $green;
+  }
+  &.blue{
+    background: $blue;
+  }
+  &.yellow{
+    background: $yellow;
   }
 }
 

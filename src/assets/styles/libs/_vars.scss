@@ -12,6 +12,8 @@ $green: #3ac994;
 $blue: #67b8ff;
 $yellow: #ffc130;
 $seconderyText:#777777;
+$darkGray:#999999;
+$lightGray:#bbb;
 
 /* typography */
 $defaultFont:'Vazir';
@@ -32,4 +34,5 @@ $normalLineHeight: 1.5;
 :export{
     primaryColor:$primaryColor;
     seconderyWhite:$seconderyWhite;
+    primaryWhite:$primaryWhite
 }

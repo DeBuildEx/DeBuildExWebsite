@@ -4,7 +4,7 @@
   padding: 20px;
   .SingularProjectItem {
     border-radius: 15px;
-    @extend %cardboxshadow;
+    @extend %cardBoxShadow;
     width: 33.3333%;
     min-width: 280px;
     padding-bottom: 7px;
@@ -27,15 +27,6 @@
         .projectInfo{
           border-radius: 20px;
           color:#fff;
-          &.onprogress{
-            background-color: yellow;
-          }
-          &.success{
-            background-color: green;
-          }
-          &.ontest{
-            background-color: blue;
-          }
         }
     }
   }

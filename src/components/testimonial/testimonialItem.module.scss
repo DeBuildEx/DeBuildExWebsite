@@ -1,3 +1,4 @@
+@import "~assets/styles/libs/vars";
 .testimonialItem {
   display: flex;
   flex-direction: column;
@@ -13,7 +14,9 @@
     span {
       text-align: center;
       margin-top: 10px;
-      font-size: 16px;
+      font-size: $titleSize;
+      color: $primaryColor;
+      font-weight: 700;
     }
   }
   p {

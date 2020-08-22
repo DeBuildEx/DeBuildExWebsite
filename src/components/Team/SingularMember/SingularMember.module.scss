@@ -13,12 +13,12 @@
         display: inline-block;
         right: 0;
         img{
-            @extend %cardboxshadow;
             max-width: 100%;
             border-radius: 100%;
         }
     }
     .content{
+        @extend %cardBoxShadow;
         border-radius: 15px;
         padding-bottom: 10px;
         display: inline-block;
@@ -29,22 +29,26 @@
         background-color: #fff;
         h4{
             text-align: left;
-            color: purple;
+            color: $primaryColor;
             margin-bottom: 0;
         }
         h3{
             text-align: right;
-            color:black;
             margin:10px 0;
         }
-        span{
-            color:#888;
-            float:right;
-            font-size: 14px;
-        }
-        button{
-            float: left;
-        }
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    span{
+        float:right;
+    }
+    button{
+        float: left;
+    }
+}
     }
   }
 }

@@ -4,7 +4,7 @@ function Navbar(props) {
   return (
     <nav>
         <a>
-            <button className="primary">
+            <button className="primary light">
                 صفحه اصلی
             </button>
         </a>

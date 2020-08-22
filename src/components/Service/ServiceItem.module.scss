@@ -4,7 +4,7 @@
     padding:20px;
     width: 33.3333%;
   .serviceItem {
-    @extend %cardboxshadow;
+    @extend %lightGrayBoxShadow;
     min-width: 280px;
     justify-content: space-between;
     background: #fff;
