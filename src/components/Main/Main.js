@@ -128,7 +128,12 @@ function Main() {
         </div>
         <button className={styles.moreProjects + " primary"}>بیشتر</button>
       </section>
-      <CurvedBox loc="ba" background={vars.seconderyWhite} className=""  style={{marginBottom:0}}>
+      <CurvedBox
+        loc="ba"
+        background={vars.seconderyWhite}
+        className=""
+        style={{ marginBottom: 0 }}
+      >
         <section>
           <h3>تیم ما</h3>
           <div className={styles.teamContainer}>
@@ -177,8 +182,16 @@ function Main() {
           </div>
         </section>
       </CurvedBox>
-      <CurvedBox loc="a" background={vars.primaryColor}  style={{paddingTop:'100px'}}>
-        <Contact />
+
+      <CurvedBox
+        loc="a"
+        background={vars.primaryColor}
+        style={{ paddingTop: "100px" }}
+      >
+        <section>
+          <h3 className="light">تماس با ما</h3>
+          <Contact />
+        </section>
       </CurvedBox>
     </Layout>
   );
