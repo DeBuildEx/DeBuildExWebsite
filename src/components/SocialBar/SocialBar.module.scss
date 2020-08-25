@@ -1,0 +1,23 @@
+@import "~assets/styles/libs/vars";
+@import "~assets/styles/libs/placeholders";
+.socialBar{
+    max-width: 80%;
+    margin: auto;
+    height: 70px;
+    padding: 5px 30px;
+    width: 500px;
+    background-color: $primaryWhite;
+    border-radius: $buttonBorderRadius;
+    @extend %cardBoxShadow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        width: 50px;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

@@ -9,6 +9,7 @@ import SingularProjectItem from "Components/Projects/Singular/SingularProjectIte
 import SingularMember from "Components/Team/SingularMember/SingularMember";
 import vars from "assets/styles/libs/_vars.scss";
 import Contact from "Components/Contact/Contact";
+import SocialBar from "Components/SocialBar/SocialBar";
 function Main() {
   var testimonialSettings = {
     isRTL: true,
@@ -186,11 +187,19 @@ function Main() {
       <CurvedBox
         loc="a"
         background={vars.primaryColor}
-        style={{ paddingTop: "100px" }}
+        style={{ paddingTop: "100px"}}
       >
         <section>
           <h3 className="light">تماس با ما</h3>
           <Contact />
+        </section>
+      </CurvedBox>
+      <CurvedBox
+      loc="b"
+      background={vars.seconderyWhite}
+      className={styles.specialSection1}>
+        <section>
+          <SocialBar />
         </section>
       </CurvedBox>
     </Layout>
