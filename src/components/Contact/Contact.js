@@ -22,25 +22,25 @@ function Contact(props) {
           </button>
         </form>
         <div className={styles.banner}>
-          <img src="https://duo48.com/app/uploads/Contact-Form-7-reCAPTCHA-CF7-V2-Banner.png" />
+          <img src={process.env.PUBLIC_URL+"/images/contact.png"} />
           <div className={styles.list}>
             <item>
-              <img
-                src={process.env.PUBLIC_URL + "/icons/social/telegram.png"}
+            <img
+                src={process.env.PUBLIC_URL + "/icons/social/telephone.png"}
               />{" "}
-              thebuildex.ir@
+             021-4435-3164
+            </item>{" "}
+            <item>
+            <img
+                src={process.env.PUBLIC_URL + "/icons/social/email.png"}
+              />{" "}
+              info@debuildex.ir
             </item>{" "}
             <item>
               <img
-                src={process.env.PUBLIC_URL + "/icons/social/telegram.png"}
+                src={process.env.PUBLIC_URL + "/icons/social/whatsapp.png"}
               />{" "}
-              thebuildex.ir@
-            </item>{" "}
-            <item>
-              <img
-                src={process.env.PUBLIC_URL + "/icons/social/telegram.png"}
-              />{" "}
-              thebuildex.ir@
+              980 0878 0912
             </item>{" "}
             <item>
               <img

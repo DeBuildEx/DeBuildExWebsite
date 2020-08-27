@@ -19,7 +19,7 @@ function Main() {
   return (
     <Layout
       pageTitle="طراحی، ساخت و اجرا"
-      pageThumb={process.env.PUBLIC_URL + "/images/mainpagethumb.jpg"}
+      pageThumb={process.env.PUBLIC_URL + "/images/slider.png"}
     >
       <section>
         <h3>نظرات مشتریان</h3>
@@ -192,14 +192,6 @@ function Main() {
         <section>
           <h3 className="light">تماس با ما</h3>
           <Contact />
-        </section>
-      </CurvedBox>
-      <CurvedBox
-      loc="b"
-      background={vars.seconderyWhite}
-      className={styles.specialSection1}>
-        <section>
-          <SocialBar />
         </section>
       </CurvedBox>
     </Layout>

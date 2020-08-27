@@ -3,7 +3,7 @@ import CurvedBox from "Components/Layout/CurvedBox/CurvedBox";
 import Navbar from "Components/NavBar/NavBar";
 import styles from "./Layout.module.scss";
 import vars from "assets/styles/libs/_vars.scss";
-
+import SocialBar from 'Components/SocialBar/SocialBar';
 function Layout(props) {
   return (
     <main>
@@ -26,6 +26,14 @@ function Layout(props) {
       <div className={props.pageThumb ? styles.content : styles.contentNoThumb}>
         {props.children}
       </div>
+      <CurvedBox
+      loc="b"
+      background={vars.seconderyWhite}
+      className={styles.specialSection1}>
+        <section>
+          <SocialBar />
+        </section>
+      </CurvedBox>
     </main>
   );
 }
