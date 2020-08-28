@@ -9,9 +9,9 @@ function Layout(props) {
     <main>
       <CurvedBox loc="a" background={vars.primaryColor} >
         <header>
-          <Navbar></Navbar>
+          <Navbar isHome={props.isHome || false} />
           <div className={styles.logo}>
-            <img src={process.env.PUBLIC_URL+"/logo.png"} alt="amir" />
+            <img src={process.env.PUBLIC_URL+"/logo.png"} alt="DeBuildEX" />
           </div>
         </header>
         <section class={styles.pageMeta} id="main">

@@ -20,6 +20,7 @@ function Main() {
     <Layout
       pageTitle="طراحی، ساخت و اجرا"
       pageThumb={process.env.PUBLIC_URL + "/images/slider.png"}
+      isHome={true}
     >
       <section>
         <h3>نظرات مشتریان</h3>
