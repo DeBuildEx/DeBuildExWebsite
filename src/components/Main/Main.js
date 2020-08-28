@@ -45,7 +45,7 @@ function Main() {
         </div>
       </section>
       <CurvedBox loc="ba" background={vars.seconderyWhite} className="">
-        <section>
+        <section id="services">
           <h3>خدمات ما</h3>
           <div className={styles.servicesContainer}>
             <ServiceItem
@@ -93,7 +93,7 @@ function Main() {
           </div>
         </section>
       </CurvedBox>
-      <section>
+      <section id="projects">
         <h3>آخرین پروژه ها</h3>
         <div className={styles.projectsContainer}>
           <SingularProjectItem
@@ -135,7 +135,7 @@ function Main() {
         className=""
         style={{ marginBottom: 0 }}
       >
-        <section>
+        <section id="team">
           <h3>تیم ما</h3>
           <div className={styles.teamContainer}>
             <SingularMember
@@ -189,7 +189,7 @@ function Main() {
         background={vars.primaryColor}
         style={{ paddingTop: "100px"}}
       >
-        <section>
+        <section id="contact">
           <h3 className="light">تماس با ما</h3>
           <Contact />
         </section>

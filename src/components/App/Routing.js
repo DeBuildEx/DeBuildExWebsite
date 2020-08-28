@@ -5,16 +5,17 @@ import Main from "Components/Main/Main";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <BrowserRouter basename="/">
+      <Switch>
             <Route
-              path="/"
+              path={process.env.PUBLIC_URL+"/"}
               exact
               //render={(routeProps) => <Redirect {...routeProps} to="/login" />}
               component={Main}
             />
            <Route path="/signup" exact component={NotFound} />
-           {false && <Route component={NotFound} />}
-    </HashRouter>
+           {true && <Route component={NotFound} />}
+  </Switch>  </BrowserRouter>
   );
 }
 

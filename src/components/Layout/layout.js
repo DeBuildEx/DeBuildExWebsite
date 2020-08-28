@@ -14,7 +14,7 @@ function Layout(props) {
             <img src={process.env.PUBLIC_URL+"/logo.png"} alt="amir" />
           </div>
         </header>
-        <section class={styles.pageMeta}>
+        <section class={styles.pageMeta} id="main">
           <h1 className="light">{props.pageTitle}</h1>
         </section>
         {props.pageThumb && (

@@ -26,3 +26,6 @@ code {
   background-color: rgba(128, 126, 125, 0.884);
   cursor: pointer;
 }
+body,*{
+  scroll-behavior: smooth;
+}
