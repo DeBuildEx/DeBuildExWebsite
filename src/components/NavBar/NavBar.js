@@ -10,22 +10,22 @@ function Navbar(props) {
    }
   return (
     <nav>
-      <a href={process.env.PUBLIC_URL+"#main"}>
+      <a href={'/'+process.env.PUBLIC_URL+"#main"}>
         <button className="primary light">صفحه اصلی</button>
       </a>
-      <a href={process.env.PUBLIC_URL+"#services"}>
+      <a href={'/'+process.env.PUBLIC_URL+"#services"}>
         <button className="flat light">خدمات</button>
       </a>
-      <a href={process.env.PUBLIC_URL+"#projects"}>
+      <a href={'/'+process.env.PUBLIC_URL+"#projects"}>
         <button className="flat light">پروژه ها</button>
       </a>
-      <a href={process.env.PUBLIC_URL+"#team"}>
+      <a href={'/'+process.env.PUBLIC_URL+"#team"}>
         <button className="flat light">اعضای تیم</button>
       </a>
-      <a href={process.env.PUBLIC_URL+"#contact"}>
+      <a href={'/'+process.env.PUBLIC_URL+"#contact"}>
         <button className="flat light">تماس با ما</button>
       </a>
-      <a href={process.env.PUBLIC_URL+"#contact"}>
+      <a href={'/'+process.env.PUBLIC_URL+"#contact"}>
         <button className={"flat light "+styles.help}>
         <MaterialIcon
             icon="add_circle"

@@ -29,3 +29,6 @@ code {
 body,*{
   scroll-behavior: smooth;
 }
+a,button:not(.disabled){
+  cursor: pointer;
+}

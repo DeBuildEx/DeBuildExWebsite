@@ -39,25 +39,47 @@ button {
   border: none;
   border-radius: $buttonBorderRadius;
   padding: 5px 15px;
+  transition: $transitionTime;
   &.primary {
     color: $primaryWhite;
     background: $primaryColor;
+    &:hover{
+      background: darken($color: $primaryColor, $amount: 10);
+    }
     &.light {
       color: $primaryColor;
       background: $primaryWhite;
+      &:hover{
+        color: darken($color: $primaryColor, $amount: 10);
+      }
     }
   }
   &.flat {
     background: none;
+    &.dark:hover{
+      color: darken($color: $primaryColor, $amount: 10);
+    }
+    &.light:hover{
+      color: darken($color: $primaryWhite, $amount: 10);
+    }
   }
   &.green{
     background: $green;
+    &:hover{
+      background: darken($color: $green, $amount: 10);
+    }
   }
   &.blue{
     background: $blue;
+    &:hover{
+      background: darken($color: $blue, $amount: 10);
+    }
   }
   &.yellow{
     background: $yellow;
+    &:hover{
+      background: darken($color: $yellow, $amount: 10);
+    }
   }
 }
 
