@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/DeBuildExWebsite/precache-manifest.141acf37debaf8511ea8fa6c15dfb8c7.js"
+  "/DeBuildExWebsite/precache-manifest.e4d202e7f9da400c17bef5a6e7e0d740.js"
 );
 
 self.addEventListener('message', (event) => {
