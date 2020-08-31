@@ -12,13 +12,13 @@ const renderStatus = (i, callback) => {
   }
   //return;
 };
-function SingularProjectItem({ picture=process.env.PUBLIC_URL+'/images/post-ph.jpg', name, status, link }) {
+function SingularProjectItem({ picture='/images/post-ph.jpg', name, status, link }) {
   return (
     <div className={styles.SingularProjectItemContainer}>
       <div className={styles.SingularProjectItem}>
         <div
           className={styles.image}
-          style={{ backgroundImage: 'url("' + picture + '")' }}
+          style={{ backgroundImage: 'url("' + process.env.PUBLIC_URL+picture + '")' }}
         ></div>
 
         <h3>{name}</h3>

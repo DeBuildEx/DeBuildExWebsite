@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://debuildex.github.io/DeBuildExWebsite",
   "dependencies": {
+    "3d-react-carousal": "^3.1.0",
     "axios": "latest",
     "material-icons-react": "^1.0.4",
     "node-sass": "^4.13.0",
