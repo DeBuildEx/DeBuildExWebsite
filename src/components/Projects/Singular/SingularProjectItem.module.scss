@@ -9,32 +9,32 @@
     @extend %cardBoxShadow;
     width: 33.3333%;
     padding-bottom: 7px;
-    .image{
-        height: 150px;
-        width: 100%;
-        background-position:center;
-        background-size: cover;
+    .image {
+      height: 150px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
     }
-    h3{
-        text-align: center;
-        font-weight: 500;
-        font-size: 21px;
+    h3 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 21px;
     }
-    .meta{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 5px 10px;
-        .projectInfo{
-          border-radius: 20px;
-          color:#fff;
-          i{
-            margin-right: 10px;
-          }
+    .meta {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 5px 10px;
+      .projectInfo {
+        border-radius: 20px;
+        color: #fff;
+        i {
+          margin-right: 10px;
         }
-        .forwardIcon i{
-          font-size: inherit;
-        }
+      }
+      .forwardIcon i {
+        font-size: inherit;
+      }
     }
   }
 }

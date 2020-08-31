@@ -3,16 +3,16 @@ import styles from "./SingularProjectItem.module.scss";
 import MaterialIcon from "material-icons-react";
 const renderStatus = (i, callback) => {
   switch (i) {
-    case '1':
+    case 1:
       return callback({ name: "انجام شده", class: "green", icon:"check_circle" });
-    case '2':
+    case 2:
       return callback({ name: "در حال اجرا", class: "yellow" ,icon:"av_timer" });
-    case '3':
+    case 3:
       return callback({ name: "در حال تست", class: "blue", icon:"playlist_add_check" });
   }
   //return;
 };
-function SingularProjectItem({ picture, name, status, link }) {
+function SingularProjectItem({ picture=process.env.PUBLIC_URL+'/images/post-ph.jpg', name, status, link }) {
   return (
     <div className={styles.SingularProjectItemContainer}>
       <div className={styles.SingularProjectItem}>

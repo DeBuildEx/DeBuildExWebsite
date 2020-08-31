@@ -9,7 +9,7 @@ import SingularProjectItem from "Components/Projects/Singular/SingularProjectIte
 import SingularMember from "Components/Team/SingularMember/SingularMember";
 import vars from "assets/styles/libs/_vars.scss";
 import Contact from "Components/Contact/Contact";
-import SocialBar from "Components/SocialBar/SocialBar";
+import { projects, quotes, persons } from "Utils/Data";
 function Main() {
   var testimonialSettings = {
     isRTL: true,
@@ -26,22 +26,13 @@ function Main() {
         <h3>نظرات مشتریان</h3>
         <div className={styles.testimonialContainer}>
           <Carousel {...testimonialSettings}>
-            <TestimonialItem
-              avatar="https://www.w3schools.com/w3images/avatar2.png"
-              name="یوسف حق گو"
-              content="
-همکاری با شرکت بیلدکس یکی از بهترین تجربه‌های کاری تیم همیار زبان بود. دقت، ظرافت در طراحی و پاسخگویی سریع از ویژگی‌های تیم نوین بود و خیلی خوشحالم که طراحی سایت خودمون رو به این تیم سپردیم."
-            />
-            <TestimonialItem
-              avatar="https://www.w3schools.com/w3images/avatar2.png"
-              name="یوسف حق گو"
-              content="شما بهترینید"
-            />
-            <TestimonialItem
-              avatar="https://www.w3schools.com/w3images/avatar2.png"
-              name="یوسف حق گو"
-              content="شما بهترینید"
-            />
+            {quotes.map((item) => (
+              <TestimonialItem
+                avatar={item.image}
+                name={item.name}
+                content={item.quote}
+              />
+            ))}
           </Carousel>
         </div>
       </section>
@@ -97,36 +88,13 @@ function Main() {
       <section id="projects">
         <h3>آخرین پروژه ها</h3>
         <div className={styles.projectsContainer}>
-          <SingularProjectItem
-            name="پروژه آرت ورک"
-            status="1"
-            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
-          />
-          <SingularProjectItem
-            name="پروژه آرت ورک"
-            status="2"
-            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
-          />{" "}
-          <SingularProjectItem
-            name="پروژه آرت ورک"
-            status="1"
-            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
-          />{" "}
-          <SingularProjectItem
-            name="پروژه آرت ورک"
-            status="3"
-            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
-          />
-          <SingularProjectItem
-            name="پروژه آرت ورک"
-            status="1"
-            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
-          />{" "}
-          <SingularProjectItem
-            name="پروژه آرت ورک"
-            status="3"
-            picture="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
-          />
+          {projects.map((item) => (
+            <SingularProjectItem
+              name={item.title}
+              status={item.status}
+              picture={item.thumb}
+            />
+          ))}
         </div>
         <button className={styles.moreProjects + " primary"}>بیشتر</button>
       </section>
@@ -139,48 +107,19 @@ function Main() {
         <section id="team">
           <h3>تیم ما</h3>
           <div className={styles.teamContainer}>
-            <SingularMember
-              name="امیرمحمد سلطانیان"
-              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
-              link="#"
-              role="توسعه دهنده front-end"
-              count="53"
-            />
-            <SingularMember
-              name="امیرمحمد سلطانیان"
-              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
-              link="#"
-              role="توسعه دهنده front-end"
-              count="53"
-            />
-            <SingularMember
-              name="امیرمحمد سلطانیان"
-              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
-              link="#"
-              role="توسعه دهنده front-end"
-              count="53"
-            />
-            <SingularMember
-              name="امیرمحمد سلطانیان"
-              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
-              link="#"
-              role="توسعه دهنده front-end"
-              count="53"
-            />
-            <SingularMember
-              name="امیرمحمد سلطانیان"
-              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
-              link="#"
-              role="توسعه دهنده front-end"
-              count="53"
-            />
-            <SingularMember
-              name="امیرمحمد سلطانیان"
-              avatar="https://image.freepik.com/free-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg"
-              link="#"
-              role="توسعه دهنده front-end"
-              count="53"
-            />
+            {persons.map((item) => (
+              <SingularMember
+                name={item.name}
+                avatar={item.image}
+                link={item.slug}
+                role={item.role}
+                count={
+                  projects.filter((i) =>
+                    i.members.includes(item.id)
+                  ).length
+                }
+              />
+            ))}
           </div>
         </section>
       </CurvedBox>
@@ -188,7 +127,7 @@ function Main() {
       <CurvedBox
         loc="a"
         background={vars.primaryColor}
-        style={{ paddingTop: "100px"}}
+        style={{ paddingTop: "100px" }}
       >
         <section id="contact">
           <h3 className="light">تماس با ما</h3>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SingularMember.module.scss";
 import { Link } from "react-router-dom";
-function SingularMember({ name, role, avatar, link, count }) {
+function SingularMember({ name, role, avatar=process.env.PUBLIC_URL+'/images/avatar-ph.jpg' , link, count }) {
   return (
     <div className={styles.singularMemberItemContainer}>
       <div className={styles.singularMemberItem}>
