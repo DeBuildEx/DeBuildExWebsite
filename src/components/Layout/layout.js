@@ -19,17 +19,18 @@ function Layout(props) {
         <section class={styles.pageMeta} id="main">
           <h1 className="light">{props.pageTitle}</h1>
         </section>
-        <Carousel
+
+        {props.pageThumb && (
+          <div className={styles.pageThumb}>
+                    <Carousel
           slides={[
             <img src={props.pageThumb} />,
             <img src={props.pageThumb} />,
             <img src={props.pageThumb} />,
           ]}
           autoplay={true}
-          interval={10000}
+          interval={3000}
         />
-        {props.pageThumb && (
-          <div className={styles.pageThumb}>
             {false && <img src={props.pageThumb} />}
           </div>
         )}
