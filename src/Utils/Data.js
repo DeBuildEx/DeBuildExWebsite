@@ -19,7 +19,7 @@ const projects = [
   {
     thumb: undefined,
     title: "اپلیکیشن Air Freight",
-    status: 1,
+    status: 4,
     link: undefined,
     slug: "air-freight",
     members: [1, 2, 3],
@@ -27,7 +27,7 @@ const projects = [
   {
     thumb: undefined,
     title: "مشاوره در Botick",
-    status: 1,
+    status: 3,
     link: undefined,
     slug: "botick",
     members: [1, 2, 3],
@@ -35,7 +35,7 @@ const projects = [
   {
     thumb: undefined,
     title: "تقویم شمسی React Native",
-    status: 1,
+    status: 2,
     link: undefined,
     slug: "jalali-calender",
     members: [1, 2, 3],

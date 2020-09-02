@@ -1,9 +1,17 @@
 @import "~assets/styles/libs/vars";
 
 %cardBoxShadow {
+  transition: $transitionTime;
   box-shadow: 1px 3px 6px 0px lighten($lightGray,10);
+  &:hover{
+    box-shadow: 1px 2px 12px 5px rgba($primaryColor,0.3) ;
+  }
 }
 
 %lightGrayBoxShadow {
-  box-shadow: 0 0 7px 1px lighten($lightGray,25);
+  transition: $transitionTime;
+  box-shadow: 1px 1px 6px 0px $lightGray;
+  &:hover{
+    box-shadow: 1px 2px 8px 5px rgba($primaryColor,0.2) ;
+  }
 }

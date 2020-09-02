@@ -5,11 +5,15 @@
   width: 50%;
   min-width: 450px;
   .singularMemberItem {
-    // min-width: 350px;
+    &:hover .avatar {
+      transform: rotate(-5deg);
+    }
     position: relative;
     display: flex;
     align-items: center;
     .avatar {
+      transition: $transitionTime;
+      transform-origin: center;
       width: 200px;
       position: absolute;
       display: inline-block;

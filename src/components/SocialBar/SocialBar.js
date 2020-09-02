@@ -1,26 +1,25 @@
 import React from "react";
 import styles from "./SocialBar.module.scss";
-import { Link } from "react-router-dom";
 function SocialBar() {
 
   return <div className={styles.socialBar}>
-      <a href="#">
-          <img src={process.env.PUBLIC_URL+'/icons/social/twitter.png'} />
+      <a href="https://twitter.com/" rel='nofollow'>
+          <img src={process.env.PUBLIC_URL+'/icons/social/twitter.png'} alt="توئیتر"/>
       </a>
-      <a href="#">
-          <img src={process.env.PUBLIC_URL+'/icons/social/behance.png'} />
+      <a href="https://behance.com/" rel='nofollow'>
+          <img src={process.env.PUBLIC_URL+'/icons/social/behance.png'} alt="بی هنس"/>
       </a>
-      <a href="#">
-          <img src={process.env.PUBLIC_URL+'/icons/social/telegram.png'} />
+      <a href="https://telegram.me/" rel='nofollow'>
+          <img src={process.env.PUBLIC_URL+'/icons/social/telegram.png'} alt="تلگرام"/>
       </a>
-      <a href="#">
-          <img src={process.env.PUBLIC_URL+'/icons/social/instagram.png'} />
+      <a href="https://instagram.com/" rel='nofollow'>
+          <img src={process.env.PUBLIC_URL+'/icons/social/instagram.png'} alt="اینستاگرام"/>
       </a>
-      <a href="#">
-          <img src={process.env.PUBLIC_URL+'/icons/social/github.png'} />
+      <a href="https://github.com/" rel='nofollow'>
+          <img src={process.env.PUBLIC_URL+'/icons/social/github.png'} alt="گیت هاب"/>
       </a>
-      <a href="#">
-          <img src={process.env.PUBLIC_URL+'/icons/social/dribbble.png'} />
+      <a href="https://dribbble.com/" rel='nofollow'>
+          <img src={process.env.PUBLIC_URL+'/icons/social/dribbble.png'} alt="دریبل"/>
       </a>
   </div>;
 

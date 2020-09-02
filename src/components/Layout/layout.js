@@ -21,17 +21,22 @@ function Layout(props) {
         </section>
 
         {props.pageThumb && (
-          <div className={styles.pageThumb}>
-                    <Carousel
-          slides={[
-            <img src={props.pageThumb} />,
-            <img src={props.pageThumb} />,
-            <img src={props.pageThumb} />,
-          ]}
-          autoplay={true}
-          interval={3000}
-        />
-            {false && <img src={props.pageThumb} />}
+          <div
+            className={
+              styles.pageThumb + " " + (!Array.isArray(props.pageThumb) && styles.single)
+            }
+          >
+            {Array.isArray(props.pageThumb) ? (
+              <Carousel
+                slides={props.pageThumb.map((i) => (
+                  <img src={i} />
+                ))}
+                autoplay={true}
+                interval={3000}
+              />
+            ) : (
+              <img src={props.pageThumb} />
+            )}
           </div>
         )}
       </CurvedBox>

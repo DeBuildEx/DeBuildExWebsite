@@ -19,7 +19,11 @@ function Main() {
   return (
     <Layout
       pageTitle="طراحی، ساخت و اجرا"
-      pageThumb={process.env.PUBLIC_URL + "/images/slider.png"}
+      pageThumb={[
+        process.env.PUBLIC_URL + "/images/slider.png",
+        process.env.PUBLIC_URL + "/images/slider.png",
+        process.env.PUBLIC_URL + "/images/slider.png",
+      ]}
       isHome={true}
     >
       <section>
@@ -93,6 +97,7 @@ function Main() {
               name={item.title}
               status={item.status}
               picture={item.thumb}
+              slug={item.slug}
             />
           ))}
         </div>
@@ -114,9 +119,7 @@ function Main() {
                 link={item.slug}
                 role={item.role}
                 count={
-                  projects.filter((i) =>
-                    i.members.includes(item.id)
-                  ).length
+                  projects.filter((i) => i.members.includes(item.id)).length
                 }
               />
             ))}

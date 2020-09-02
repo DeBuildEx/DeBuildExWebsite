@@ -81,6 +81,12 @@ button {
       background: darken($color: $yellow, $amount: 10);
     }
   }
+  &.gray{
+    background: $darkGray;
+    &:hover{
+      background: darken($color: $darkGray, $amount: 10);
+    }
+  }
 }
 
 .d-none {
@@ -107,9 +113,9 @@ span {
   font-weight: 300;
 }
 .react-3d-carousel .slider-container .slider-content{
-  transform: translatex(50%);
-  right: 50%;
-  left: auto;
+  transform: translatex(50%) !important;
+  right: 50% !important;
+  left: auto !important;
 }
 .slider-single-content, .slider-single-content img {
   max-height: 300px;

@@ -12,7 +12,7 @@ function SingularMember({ name, role, avatar='/images/avatar-ph.jpg' , link, cou
           <h4>{role}</h4>
           <h3>{name}</h3>
         <div className={styles.footer}>  <span>مشارکت در {count} پروژه</span>
-          <Link to={link}>
+          <Link to={'member/'+link}>
             <button className="primary">مشاهده جزئیات</button>
           </Link></div>
         </div>

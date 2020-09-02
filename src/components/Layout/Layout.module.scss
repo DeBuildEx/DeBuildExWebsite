@@ -27,6 +27,9 @@ header {
 .pageThumb{
     width: 100%;
     max-height: 100px;
+    &.single{
+        display: flex;
+    }
     img{
         max-height: 300px;
         max-width: 95%;
