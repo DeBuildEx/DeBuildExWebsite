@@ -67,6 +67,11 @@
             min-width: 200px;
         }
       }
+      @media screen and (max-width: 475px) {
+        .inputIcons {
+          width: 100%;
+      }
+      }
     }
     .banner {
       margin: 0 auto;

@@ -46,7 +46,7 @@ function Layout(props) {
       <CurvedBox
         loc="b"
         background={vars.seconderyWhite}
-        className={styles.specialSection1}
+        className={props.isHome?styles.specialSection1:styles.specialSection}
       >
         <section>
           <SocialBar />

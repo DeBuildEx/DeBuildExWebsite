@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Redirect , HashRouter} from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 import NotFound from "Components/NotFound/NotFound";
 import Main from "Components/Main/Main";
+import ProjectContainer from "Components/Projects/Single/ProjectContainer"
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
               //render={(routeProps) => <Redirect {...routeProps} to="/login" />}
               component={Main}
             />
-           <Route path="/signup" exact component={NotFound} />
-           {true && <Route component={NotFound} />}
+           <Route path={process.env.PUBLIC_URL+"/project/:slug"} exact component={ProjectContainer} />
+           <Route component={NotFound} />
   </Switch>  </BrowserRouter>
   );
 }

@@ -1,0 +1,11 @@
+@import "~assets/styles/libs/vars";
+
+.loadingBox{
+    width: 100vw;
+height: 100vh;
+background: $primaryColor;
+display: flex;
+vertical-align: middle;
+align-items: center;
+justify-content: center;
+}
