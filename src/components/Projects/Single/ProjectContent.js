@@ -11,7 +11,7 @@ import SingularMember from "Components/Team/SingularMember/SingularMember";
 import Carousel from "react-elastic-carousel";
 
 function ProjectContent({
-  thumb = "/images/post-ph.jpg",
+  thumb = process.env.PUBLIC_URL+"/images/post-ph.jpg",
   title,
   status,
   slug,
@@ -29,7 +29,7 @@ function ProjectContent({
     <Layout pageTitle={title} pageThumb={thumb} projectMeta={{ status, link }}>
       <div className={styles.projectContent}>
         <p>{description}</p>
-        <CurvedBox loc={"ba"} background={vars.seconderyWhite}>
+        {members && <CurvedBox loc={"ba"} background={vars.seconderyWhite}>
           <section>
             <h3>اعضای پروژه</h3>
             <div className={styles.members}>
@@ -54,7 +54,7 @@ function ProjectContent({
             </Carousel>
             </div>
           </section>
-        </CurvedBox>
+        </CurvedBox>}
       </div>
     </Layout>
   );
