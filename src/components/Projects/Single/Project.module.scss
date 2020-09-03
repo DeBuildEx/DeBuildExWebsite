@@ -1,0 +1,30 @@
+@import "~assets/styles/libs/vars";
+
+.projectContent {
+  p {
+    max-width: 920px;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+  }
+  .members{
+      max-width: 1080px;
+      margin: auto;
+      .singleMember{
+          width: 100%;
+      }
+      button{
+        font-size: 42px;
+        background: none;
+        box-shadow: none;
+        color:$darkGray;
+        &:hover:enabled,&:focus:enabled{
+            background: none;
+            color:$primaryColor;
+            box-shadow: none;
+        }
+        &:disabled{
+            color:$lightGray;
+        }
+    }
+  }
+}

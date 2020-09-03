@@ -5,6 +5,9 @@ import styles from "./Layout.module.scss";
 import vars from "assets/styles/libs/_vars.scss";
 import SocialBar from "Components/SocialBar/SocialBar";
 import { Carousel } from "3d-react-carousal";
+import MaterialIcon from "material-icons-react";
+import { renderStatus } from "Utils/Functions";
+import { Link } from "react-router-dom";
 
 function Layout(props) {
   return (
@@ -18,12 +21,29 @@ function Layout(props) {
         </header>
         <section class={styles.pageMeta} id="main">
           <h1 className="light">{props.pageTitle}</h1>
+          {props.projectMeta && (
+          <div className={styles.meta}>
+            {renderStatus(props.projectMeta.status, (o) => (
+              <button className={styles.projectInfo + " " + o.class}>
+                {o.name}
+                <MaterialIcon icon={o.icon} />
+              </button>
+            ))}
+            <Link to={props.projectMeta.link}>
+              <button className={"primary light "+styles.projectLink}>
+                مشاهده پروژه <MaterialIcon icon="arrow_back_ios" />
+              </button>
+            </Link>
+          </div>
+        )}
         </section>
-
+        
         {props.pageThumb && (
           <div
             className={
-              styles.pageThumb + " " + (!Array.isArray(props.pageThumb) && styles.single)
+              styles.pageThumb +
+              " " +
+              (!Array.isArray(props.pageThumb) && styles.single)
             }
           >
             {Array.isArray(props.pageThumb) ? (
@@ -46,7 +66,9 @@ function Layout(props) {
       <CurvedBox
         loc="b"
         background={vars.seconderyWhite}
-        className={props.isHome?styles.specialSection1:styles.specialSection}
+        className={
+          props.isHome ? styles.specialSection1 : styles.specialSection
+        }
       >
         <section>
           <SocialBar />

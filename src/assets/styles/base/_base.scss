@@ -112,6 +112,13 @@ span {
   font-size: $smallSize;
   font-weight: 300;
 }
+p{
+  font-weight: 300;
+  font-size: $bodySize;
+}
+b {
+  font-weight: 600;
+}
 .react-3d-carousel .slider-container .slider-content{
   transform: translatex(50%) !important;
   right: 50% !important;
