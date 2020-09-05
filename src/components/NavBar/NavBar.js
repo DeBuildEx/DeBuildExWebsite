@@ -3,7 +3,7 @@ import styles from "./NavBar.module.scss";
 import MaterialIcon from "material-icons-react";
 import {Link} from "react-router-dom"
 function Navbar({isHome}) {
-  let x = process.env.PUBLIC_URL;
+  let x = process.env.PUBLIC_URL || '/';
   if(isHome)
   x='';
   return (
