@@ -11,7 +11,7 @@ import SingularMember from "Components/Team/SingularMember/SingularMember";
 import Carousel from "react-elastic-carousel";
 
 function ProjectContent({
-  thumb = process.env.PUBLIC_URL+"/images/post-ph.jpg",
+  thumb = process.env.PUBLIC_URL + "/images/post-ph.jpg",
   title,
   status,
   slug,
@@ -21,40 +21,47 @@ function ProjectContent({
 }) {
   var testimonialSettings = {
     isRTL: true,
-    itemsToShow: 2,
+    //itemsToShow: 1,
     pagination: false,
-    
+    breakPoints: [
+      { width: 1, itemsToShow: 1 },
+      { width: 960, itemsToShow: 2 },
+    ],
   };
   return (
     <Layout pageTitle={title} pageThumb={thumb} projectMeta={{ status, link }}>
       <div className={styles.projectContent}>
         <p>{description}</p>
-        {members && <CurvedBox loc={"ba"} background={vars.seconderyWhite}>
+        {false && (
+          <CurvedBox loc={"ba"} background={vars.seconderyWhite}></CurvedBox>
+        )}
+        {members && (
           <section>
             <h3>اعضای پروژه</h3>
             <div className={styles.members}>
-            <Carousel {...testimonialSettings}>
-            {members.map((m) => {
-              let x = persons.find((i) => i.id == m);
-              if (!x && m && typeof m == "object") x = m;
-              if (x)
-                return (
-                  <SingularMember
-                    name={x.name}
-                    avatar={x.image}
-                    link={x.slug}
-                    role={x.role}
-                    count={
-                      projects.filter((i) => i.members.includes(x.id)).length
-                    }
-                    className={styles.singleMember}
-                  />
-                );
-            })}
-            </Carousel>
+              <Carousel {...testimonialSettings}>
+                {members.map((m) => {
+                  let x = persons.find((i) => i.id == m);
+                  if (!x && m && typeof m == "object") x = m;
+                  if (x)
+                    return (
+                      <SingularMember
+                        name={x.name}
+                        avatar={x.image}
+                        link={x.slug}
+                        role={x.role}
+                        count={
+                          projects.filter((i) => i.members.includes(x.id))
+                            .length
+                        }
+                        className={styles.singleMember}
+                      />
+                    );
+                })}
+              </Carousel>
             </div>
           </section>
-        </CurvedBox>}
+        )}
       </div>
     </Layout>
   );
