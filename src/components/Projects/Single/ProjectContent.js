@@ -35,7 +35,7 @@ function ProjectContent({
         {false && (
           <CurvedBox loc={"ba"} background={vars.seconderyWhite}></CurvedBox>
         )}
-        {members && (
+        {members.length && (
           <section>
             <h3>اعضای پروژه</h3>
             <div className={styles.members}>
@@ -46,10 +46,7 @@ function ProjectContent({
                   if (x)
                     return (
                       <SingularMember
-                        name={x.name}
-                        avatar={x.image}
-                        link={x.slug}
-                        role={x.role}
+                        {...x}
                         count={
                           projects.filter((i) => i.members.includes(x.id))
                             .length

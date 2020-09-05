@@ -133,3 +133,17 @@ b {
 .react-3d-carousel .slider-container .slider-left,.react-3d-carousel .slider-container .slider-right{
   display: none !important;
 }
+button.rec-arrow{
+  font-size: 42px;
+  background: none;
+  box-shadow: none;
+  color:$darkGray;
+  &:hover:enabled,&:focus:enabled{
+      background: none;
+      color:$primaryColor;
+      box-shadow: none;
+  }
+  &:disabled{
+      color:$lightGray;
+  }
+}

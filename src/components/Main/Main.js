@@ -93,12 +93,7 @@ function Main() {
         <h3>آخرین پروژه ها</h3>
         <div className={styles.projectsContainer}>
           {projects.map((item) => (
-            <SingularProjectItem
-              name={item.title}
-              status={item.status}
-              picture={item.thumb}
-              slug={item.slug}
-            />
+            <SingularProjectItem {...item} />
           ))}
         </div>
         <button className={styles.moreProjects + " primary"}>بیشتر</button>

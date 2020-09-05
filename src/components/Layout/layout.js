@@ -22,22 +22,27 @@ function Layout(props) {
         <section class={styles.pageMeta} id="main">
           <h1 className="light">{props.pageTitle}</h1>
           {props.projectMeta && (
-          <div className={styles.meta}>
-            {renderStatus(props.projectMeta.status, (o) => (
-              <button className={styles.projectInfo + " " + o.class}>
-                {o.name}
-                <MaterialIcon icon={o.icon} />
-              </button>
-            ))}
-            <Link to={props.projectMeta.link}>
-              <button className={"primary light "+styles.projectLink}>
-                مشاهده پروژه <MaterialIcon icon="arrow_back_ios" />
-              </button>
-            </Link>
-          </div>
-        )}
+            <div className={styles.meta}>
+              {renderStatus(props.projectMeta.status, (o) => (
+                <button className={styles.projectInfo + " " + o.class}>
+                  {o.name}
+                  <MaterialIcon icon={o.icon} />
+                </button>
+              ))}
+              <Link to={props.projectMeta.link}>
+                <button className={"primary light " + styles.projectLink}>
+                  مشاهده پروژه <MaterialIcon icon="arrow_back_ios" />
+                </button>
+              </Link>
+            </div>
+          )}
+          {props.memberMeta && (
+            <div className={styles.meta}>
+              <h3 className="light">{props.memberMeta.role}</h3>
+            </div>
+          )}
         </section>
-        
+
         {props.pageThumb && (
           <div
             className={

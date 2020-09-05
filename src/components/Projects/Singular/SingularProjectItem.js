@@ -4,8 +4,8 @@ import MaterialIcon from "material-icons-react";
 import { renderStatus } from "Utils/Functions";
 import { Link } from "react-router-dom";
 function SingularProjectItem({
-  picture = "/images/post-ph.jpg",
-  name,
+  thumb = process.env.PUBLIC_URL+"/images/post-ph.jpg",
+  title,
   status,
   slug,
 }) {
@@ -15,11 +15,11 @@ function SingularProjectItem({
         <div
           className={styles.image}
           style={{
-            backgroundImage: 'url("' + process.env.PUBLIC_URL + picture + '")',
+            backgroundImage: 'url("'+ thumb + '")',
           }}
         ></div>
 
-        <h3>{name}</h3>
+        <h3>{title}</h3>
         <div className={styles.meta}>
           {renderStatus(status, (o) => (
             <button className={styles.projectInfo + " " + o.class}>
