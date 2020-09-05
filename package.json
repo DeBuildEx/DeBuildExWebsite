@@ -15,6 +15,7 @@
     "react-dnd-html5-backend": "^10.0.2",
     "react-dom": "^16.11.0",
     "react-elastic-carousel": "^0.7.3",
+    "react-icofont": "^1.0.19",
     "react-loading": "^2.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",

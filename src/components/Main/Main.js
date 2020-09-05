@@ -109,10 +109,7 @@ function Main() {
           <div className={styles.teamContainer}>
             {persons.map((item) => (
               <SingularMember
-                name={item.name}
-                avatar={item.image}
-                link={item.slug}
-                role={item.role}
+                {...item}
                 count={
                   projects.filter((i) => i.members.includes(item.id)).length
                 }

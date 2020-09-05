@@ -4,8 +4,14 @@ function CurvedBox(props) {
   console.log(props.after);
   return (
     <div
-      className={styles.curveContainer + " " + (styles[props.loc]  || '') + ' '+ (props.className || '')}
-      style={{ "background-color": props.background,...props.style}}
+      className={
+        styles.curveContainer +
+        " " +
+        (styles[props.loc] || "") +
+        " " +
+        (props.className || "")
+      }
+      style={{ backgroundColor: props.background, ...props.style }}
     >
       {props.children}
     </div>

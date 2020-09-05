@@ -11,7 +11,7 @@ function SingleMember(props) {
     let r = persons.find((i) => i.slug == slug);
     setMember(r);
     setTimeout(() => {
-      setWait(false)
+      setWait(false);
     }, 1000);
     //setWait(false);
   }, [slug]);

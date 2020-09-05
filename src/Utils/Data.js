@@ -79,7 +79,7 @@ const projects = [
     
     link: undefined,
     slug: "reserveit",
-    members: [1, 2],
+    members: [1, 2,4],
   },
 ];
 

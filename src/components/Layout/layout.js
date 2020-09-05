@@ -8,6 +8,7 @@ import { Carousel } from "3d-react-carousal";
 import MaterialIcon from "material-icons-react";
 import { renderStatus } from "Utils/Functions";
 import { Link } from "react-router-dom";
+import Icofont from "react-icofont";
 
 function Layout(props) {
   return (
@@ -19,7 +20,7 @@ function Layout(props) {
             <img src={process.env.PUBLIC_URL + "/logo.png"} alt="DeBuildEX" />
           </div>
         </header>
-        <section class={styles.pageMeta} id="main">
+        <section className={styles.pageMeta} id="main">
           <h1 className="light">{props.pageTitle}</h1>
           {props.projectMeta && (
             <div className={styles.meta}>
@@ -37,9 +38,22 @@ function Layout(props) {
             </div>
           )}
           {props.memberMeta && (
-            <div className={styles.meta}>
-              <h3 className="light">{props.memberMeta.role}</h3>
-            </div>
+            <React.Fragment>
+              <button className={"light primary disabled " + styles.role}>
+                {props.memberMeta.role}
+              </button>
+              <div className={styles.meta}>
+                <div className={styles.social}>
+                  {Object.keys(props.memberMeta.social).map((i) => (
+                    <a key={i} href={props.memberMeta.social[i]}>
+                      <button className="flat light">
+                        <Icofont icon={i} size={3} />
+                      </button>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </React.Fragment>
           )}
         </section>
 
