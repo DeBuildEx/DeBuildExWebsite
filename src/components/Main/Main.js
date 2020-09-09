@@ -46,46 +46,46 @@ function Main() {
           <div className={styles.servicesContainer}>
             <ServiceItem
               image={
-                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+                process.env.PUBLIC_URL + "/images/services/front-end.png"
               }
-              title="رابط کاربری"
-              subtitle="UI/UX"
+              title="کدنویسی"
+              subtitle="Front End"
             />{" "}
             <ServiceItem
               image={
                 process.env.PUBLIC_URL + "/images/services/graphic-design.png"
               }
+              title="کدنویسی"
+              subtitle="Back End"
+            />{" "}
+            <ServiceItem
+              image={
+                process.env.PUBLIC_URL + "/images/services/backend.png"
+              }
               title="رابط کاربری"
               subtitle="UI/UX"
+            />{" "}
+           <ServiceItem
+              image={
+                process.env.PUBLIC_URL + "/images/services/front-end.png"
+              }
+              title="کدنویسی"
+              subtitle="Front End"
             />{" "}
             <ServiceItem
               image={
                 process.env.PUBLIC_URL + "/images/services/graphic-design.png"
               }
-              title="رابط کاربری"
-              subtitle="UI/UX"
+              title="کدنویسی"
+              subtitle="Back End"
             />{" "}
             <ServiceItem
               image={
-                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
+                process.env.PUBLIC_URL + "/images/services/backend.png"
               }
               title="رابط کاربری"
               subtitle="UI/UX"
             />{" "}
-            <ServiceItem
-              image={
-                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
-              }
-              title="رابط کاربری"
-              subtitle="UI/UX"
-            />{" "}
-            <ServiceItem
-              image={
-                process.env.PUBLIC_URL + "/images/services/graphic-design.png"
-              }
-              title="رابط کاربری"
-              subtitle="UI/UX"
-            />
           </div>
         </section>
       </CurvedBox>
