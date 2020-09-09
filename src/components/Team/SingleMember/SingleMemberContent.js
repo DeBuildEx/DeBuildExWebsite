@@ -8,6 +8,8 @@ import { projects } from "Utils/Data";
 import SingularMember from "Components/Team/SingularMember/SingularMember";
 import Carousel from "react-elastic-carousel";
 import SingularProjectItem from "Components/Projects/Singular/SingularProjectItem";
+import DocumentMeta from "react-document-meta";
+
 function SingleMemberContent({
   image = process.env.PUBLIC_URL + "/images/post-ph.jpg",
   name,
@@ -26,22 +28,43 @@ function SingleMemberContent({
       { width: 1260, itemsToShow: 4 },
     ],
   };
-
+  const meta = {
+    title: "اعضای تیم: " + name + " - توسعه نرم افزار بیلدکس",
+    description:
+      name +
+      " با سمت " +
+      role +
+      "در تیم توسعه نرم افزار بیلدکس حضور دارد. توضیحات بیشتر از طریق وبسایت بیلدکس در دسترس قرار دارند.",
+    meta: {
+      "og:title": "اعضای تیم: " + name + " - توسعه نرم افزار بیلدکس",
+      description:
+        name +
+        " با سمت " +
+        role +
+        "در تیم توسعه نرم افزار بیلدکس حضور دارد. توضیحات بیشتر از طریق وبسایت بیلدکس در دسترس قرار دارند.",
+      charset: "utf-8",
+      name: {
+        keywords: "طراحی سایت,برنامه نویسی,نرم افزار,ساخت اپلیکیشن,توسعه دهنده",
+      },
+    },
+  };
   return (
-    <Layout pageTitle={name} pageThumb={image} memberMeta={{ role, social }}>
-      <div className={styles.singleMember}>
-        <section>
-          <h3>پروژه های مشارکت کرده</h3>
-          <Carousel {...testimonialSettings}>
-            {projects
-              .filter((i) => i.members.includes(id))
-              .map((m) => (
-                <SingularProjectItem {...m} />
-              ))}
-          </Carousel>
-        </section>
-      </div>
-    </Layout>
+    <DocumentMeta {...meta}>
+      <Layout pageTitle={name} pageThumb={image} memberMeta={{ role, social }}>
+        <div className={styles.singleMember}>
+          <section>
+            <h3>پروژه های مشارکت کرده</h3>
+            <Carousel {...testimonialSettings}>
+              {projects
+                .filter((i) => i.members.includes(id))
+                .map((m) => (
+                  <SingularProjectItem {...m} />
+                ))}
+            </Carousel>
+          </section>
+        </div>
+      </Layout>
+    </DocumentMeta>
   );
 }
 

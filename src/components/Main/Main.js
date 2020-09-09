@@ -10,13 +10,28 @@ import SingularMember from "Components/Team/SingularMember/SingularMember";
 import vars from "assets/styles/libs/_vars.scss";
 import Contact from "Components/Contact/Contact";
 import { projects, quotes, persons } from "Utils/Data";
+import DocumentMeta from 'react-document-meta';
+
 function Main() {
   var testimonialSettings = {
     isRTL: true,
     itemsToShow: 1,
     pagination: false,
   };
+  const meta = {
+    title: 'صفحه اصلی - گروه طراحی و توسعه نرم افزار بیلدکس',
+    description: 'انواع خدمات نرم افزاری، اعضای تیم و پروژه های اجرا شده توسط تیم بیلدکس',
+    meta: {
+     'og:title': 'گروه طراحی و توسعه نرم افزار بیلدکس',
+      description: 'انواع خدمات نرم افزاری، اعضای تیم و پروژه های اجرا شده توسط تیم بیلدکس',
+      charset: 'utf-8',
+      name: {
+        keywords: 'طراحی سایت,برنامه نویسی,نرم افزار,ساخت اپلیکیشن,توسعه دهنده'
+      }
+    }
+  };
   return (
+    <DocumentMeta {...meta}>
     <Layout
       pageTitle="طراحی، ساخت و اجرا"
       pageThumb={[
@@ -130,6 +145,7 @@ function Main() {
         </section>
       </CurvedBox>
     </Layout>
+    </DocumentMeta >
   );
 }
 
